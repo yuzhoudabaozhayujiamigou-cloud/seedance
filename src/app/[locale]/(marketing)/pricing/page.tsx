@@ -12,7 +12,9 @@ export async function generateMetadata({
   const alternates = buildAlternates("/pricing", locale);
 
   return {
-    title: "Pricing",
+    title: "Ecommerce Video Ads Pricing | AI Product Video Generator",
+    description:
+      "Simple credit-based pricing for AI product video ads powered by Seedance 2.0. Start free, scale with Starter, Pro, or Business.",
     alternates: {
       canonical: alternates.canonical,
       languages: alternates.languages,
