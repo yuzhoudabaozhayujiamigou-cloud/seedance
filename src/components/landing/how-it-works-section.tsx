@@ -1,6 +1,6 @@
 "use client";
 
-import { Type, Upload, Video, Download, Clock, ArrowRight } from "lucide-react";
+import { Type, Upload, Video, Clock, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
@@ -27,32 +27,24 @@ const steps = [
     icon: Type,
     titleKey: "steps.prompt.title",
     descKey: "steps.prompt.description",
-    gradient: { from: "#9E7AFF", to: "#C084FC" },
-    stat: { value: 30, suffix: "s", labelKey: "steps.prompt.stat" },
+    gradient: { from: "#1E2A78", to: "#3A4AB0" },
+    stat: { value: 20, suffix: "s", labelKey: "steps.prompt.stat" },
   },
   {
     step: "02",
     icon: Upload,
     titleKey: "steps.upload.title",
     descKey: "steps.upload.description",
-    gradient: { from: "#6366F1", to: "#818CF8" },
-    stat: { value: 20, suffix: "+", labelKey: "steps.upload.stat" },
+    gradient: { from: "#FF6A00", to: "#FF8F3F" },
+    stat: { value: 5, suffix: "x", labelKey: "steps.upload.stat" },
   },
   {
     step: "03",
     icon: Video,
     titleKey: "steps.generate.title",
     descKey: "steps.generate.description",
-    gradient: { from: "#EC4899", to: "#F472B6" },
+    gradient: { from: "#1E2A78", to: "#FF6A00" },
     stat: { value: 2, suffix: "min", labelKey: "steps.generate.stat" },
-  },
-  {
-    step: "04",
-    icon: Download,
-    titleKey: "steps.download.title",
-    descKey: "steps.download.description",
-    gradient: { from: "#F59E0B", to: "#FBBF24" },
-    stat: { value: 1080, suffix: "p", labelKey: "steps.download.stat" },
   },
 ];
 
@@ -113,7 +105,7 @@ export function HowItWorks() {
         </BlurFade>
 
         {/* 步骤卡片 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-4">
           {steps.map((step, index) => {
             const Icon = step.icon;
 

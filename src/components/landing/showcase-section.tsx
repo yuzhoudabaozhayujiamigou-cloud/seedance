@@ -23,51 +23,51 @@ import { LocaleLink } from "@/i18n/navigation";
 const showcaseVideos = [
   {
     id: 1,
-    title: "Cinematic Nature",
-    description: "A stunning landscape video",
+    title: "Portable Blender - TikTok UGC Hook",
+    description: "9:16 creator-style ad with first 3-second hook",
     thumbnail: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-    gradient: "from-blue-500 to-cyan-500",
-    tag: "Text to Video",
+    gradient: "from-[#1E2A78] to-[#3A4AB0]",
+    tag: "TikTok UGC",
   },
   {
     id: 2,
-    title: "Product Animation",
-    description: "Smooth product showcase",
+    title: "Skincare Bundle - Reels Promo",
+    description: "Vertical ad cut with social proof captions",
     thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",
-    gradient: "from-purple-500 to-pink-500",
-    tag: "Image to Video",
+    gradient: "from-[#FF6A00] to-[#FF8F3F]",
+    tag: "Instagram Reels",
   },
   {
     id: 3,
-    title: "Abstract Art",
-    description: "Creative AI-generated visuals",
+    title: "Pet Brush - Amazon Listing Video",
+    description: "Feature-focused product listing sequence",
     thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
-    gradient: "from-orange-500 to-red-500",
-    tag: "AI Creative",
+    gradient: "from-[#1E2A78] to-[#FF6A00]",
+    tag: "Amazon Listing",
   },
   {
     id: 4,
-    title: "Urban Scene",
-    description: "City life in motion",
+    title: "Standing Desk - Product Demo",
+    description: "Use-case walkthrough with scene transitions",
     thumbnail: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80",
-    gradient: "from-green-500 to-emerald-500",
-    tag: "Text to Video",
+    gradient: "from-[#1E2A78] to-[#5665C8]",
+    tag: "Product Demo",
   },
   {
     id: 5,
-    title: "Character Animation",
-    description: "Bringing characters to life",
+    title: "Whitening Pen - Before / After",
+    description: "Benefit-led side-by-side comparison edit",
     thumbnail: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
-    gradient: "from-indigo-500 to-purple-500",
-    tag: "Character",
+    gradient: "from-[#FF6A00] to-[#FF9C57]",
+    tag: "Before/After",
   },
   {
     id: 6,
-    title: "Space Journey",
-    description: "Explore the cosmos",
+    title: "Phone Grip - Multi-Variant Batch",
+    description: "Six ad hooks generated from one product photo",
     thumbnail: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800&q=80",
-    gradient: "from-teal-500 to-cyan-500",
-    tag: "Text to Video",
+    gradient: "from-[#1E2A78] to-[#FF6A00]",
+    tag: "Batch Creative",
   },
 ];
 
@@ -138,7 +138,7 @@ export function ShowcaseSection() {
                 className="group relative"
               >
                 {/* 视频卡片 */}
-                <div className="relative rounded-2xl overflow-hidden border border-border bg-background shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="relative cursor-pointer overflow-hidden rounded-2xl border border-white/60 bg-white/72 shadow-lg backdrop-blur-md transition-all duration-300 hover:shadow-2xl">
                   {/* 边框光效 - 仅第一个大卡片 */}
                   {index === 0 && (
                     <BorderBeam
@@ -215,14 +215,14 @@ export function ShowcaseSection() {
             className="text-center"
           >
             <p className="text-muted-foreground mb-6">{t("ctaText")}</p>
-            <LocaleLink href="/#generator">
+            <LocaleLink href="/examples">
               <ShimmerButton
                 shimmerColor="#ffffff"
                 shimmerSize="0.05em"
                 shimmerDuration="3s"
                 borderRadius="100px"
-                background="linear-gradient(135deg, #2563EB 0%, #7C3AED 100%)"
-                className="px-8 py-3 text-base font-medium shadow-lg shadow-blue-500/25"
+                background="linear-gradient(135deg, #1E2A78 0%, #FF6A00 100%)"
+                className="px-8 py-3 text-base font-medium shadow-lg shadow-primary/25"
               >
                 {t("ctaButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />

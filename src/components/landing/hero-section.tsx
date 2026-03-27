@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { Sparkles, Zap, Play } from "lucide-react";
+import { Sparkles, Zap, Play, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { toast } from "sonner";
@@ -16,12 +16,14 @@ import {
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { Meteors } from "@/components/magicui/meteors";
 import { cn } from "@/components/ui";
+import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth/client";
 import { calculateModelCredits, getAvailableModels } from "@/config/credits";
 import { NEW_USER_GIFT } from "@/config/pricing-user";
 import { uploadImage } from "@/lib/video-api";
 import { useSigninModal } from "@/hooks/use-signin-modal";
 import { videoTaskStorage } from "@/lib/video-task-storage";
+import { LocaleLink } from "@/i18n/navigation";
 import type { ProviderType } from "@/ai";
 import {
   isModelModeSupported,
@@ -348,6 +350,27 @@ export function HeroSection({ currentProvider }: HeroSectionProps) {
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 {t("description")}
               </p>
+            </BlurFade>
+
+            {/* 双 CTA */}
+            <BlurFade delay={0.28} inView>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <LocaleLink href="/#generator">
+                  <Button size="lg" className="rounded-full px-6">
+                    {t("startCreating")}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </LocaleLink>
+                <LocaleLink href="/templates">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="rounded-full border-primary/30 bg-white/65 px-6 backdrop-blur-md"
+                  >
+                    {t("viewExamples")}
+                  </Button>
+                </LocaleLink>
+              </div>
             </BlurFade>
 
             {/* 特性标签 */}

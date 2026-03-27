@@ -24,7 +24,11 @@
     "docs": "文档",
     "myCreations": "我的作品",
     "credits": "积分",
-    "settings": "设置"
+    "settings": "设置",
+    "generate": "生成",
+    "templates": "模板",
+    "examples": "示例",
+    "api": "API"
   },
   "Hero": {
     "badge": "支持 Sora 2、Veo 3.1 等模型",
@@ -138,6 +142,29 @@
     "ai": {
       "title": "先进 AI",
       "description": "由最新的 AI 视频生成模型驱动"
+    },
+    "browseAll": "查看全部模板",
+    "categories": {
+      "tiktok": {
+        "title": "TikTok UGC",
+        "description": "面向短视频投放的真人口播与种草风格模板。"
+      },
+      "reels": {
+        "title": "Instagram Reels",
+        "description": "为 Reels 优化的竖版节奏与字幕呈现模板。"
+      },
+      "amazon": {
+        "title": "Amazon Listing",
+        "description": "适合亚马逊商品详情页的视频展示模板。"
+      },
+      "demo": {
+        "title": "Product Demo",
+        "description": "突出功能与使用场景的产品演示模板。"
+      },
+      "beforeAfter": {
+        "title": "Before/After",
+        "description": "强化效果对比的前后对照类创意模板。"
+      }
     }
   },
   "HowItWorks": {

@@ -1,24 +1,23 @@
 "use client";
 
 import { Heart } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
-import { cn } from "@/components/ui";
 import { LocaleLink } from "@/i18n/navigation";
 
 export function LandingFooter() {
   const t = useTranslations('Footer');
-  const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
   const footerSections = [
     {
       title: t('product'),
       links: [
-        { title: "Image to Video", href: "/image-to-video" },
-        { title: "Text to Video", href: "/text-to-video" },
-        { title: "Reference to Video", href: "/reference-to-video" },
+        { title: "Generate", href: "/#generator" },
+        { title: "Templates", href: "/templates" },
+        { title: "Examples", href: "/examples" },
         { title: "Pricing", href: "/pricing" },
+        { title: "API", href: "/api-access" },
       ],
     },
     // {
@@ -52,10 +51,10 @@ export function LandingFooter() {
               href="/"
               className="flex items-center gap-2 text-xl font-semibold mb-4"
             >
-              🎬 VideoFly
+              VideoFly
             </LocaleLink>
             <p className="text-sm text-muted-foreground mb-4">
-              Transform your ideas into stunning videos with AI.
+              AI product video generator for ecommerce ads powered by Seedance 2.0.
             </p>
           </div>
 
