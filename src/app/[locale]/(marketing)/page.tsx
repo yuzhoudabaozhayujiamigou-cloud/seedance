@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: PageMetadataProps) {
   const { locale } = await params;
 
   const titles = {
-    en: "AI Product Video Generator for Ecommerce Ads | Seedance 2.0",
-    zh: "AI视频生成器 - 使用Sora 2和Veo 3.1创建精彩视频",
+    en: "Seedance AI Product Video Generator for Ecommerce Ads",
+    zh: "Seedance AI 商品视频生成器",
   };
 
   const descriptions = {
-    en: "Create high-converting ecommerce video ads for Shopify, Amazon, and Etsy products with Seedance 2.0. Turn product photos into TikTok, Reels, and listing-ready ad videos in minutes.",
-    zh: "用AI将您的想法转化为精彩视频。访问Sora 2、Veo 3.1、Wan 2.6等模型。快速、简单、专业品质的视频生成，几分钟内完成。立即开始创作！",
+    en: "Generate ecommerce product videos for ads, feeds, and listings from prompts and product images.",
+    zh: "通过提示词和商品图片生成适用于广告、信息流和详情页的电商视频。",
   };
 
   const canonicalUrl = `${siteConfig.url}${locale === i18n.defaultLocale ? "" : `/${locale}`}`;

@@ -62,9 +62,9 @@ WelcomeEmail.PreviewProps = {
       },
       welcome: {
         greeting: "Hi {name},",
-        title: "Welcome to VideoFly!",
-        body: "Thank you for joining VideoFly! We're thrilled to have you on board.",
-        features: "With VideoFly, you can:",
+        title: "Welcome to Seedance!",
+        body: "Thank you for joining Seedance! We're thrilled to have you on board.",
+        features: "With Seedance, you can:",
         featuresList: {
           generate: "Generate stunning AI videos in minutes",
           models: "Use multiple AI models like Sora 2, Veo 3.1, and more",

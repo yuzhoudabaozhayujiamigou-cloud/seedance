@@ -9,7 +9,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BlurFade } from "@/components/magicui/blur-fade";
 
 interface FAQItem {
   questionKey: string;
@@ -46,7 +45,6 @@ const faqData: FAQItem[] = [
 export function FAQSection() {
   const t = useTranslations("FAQ");
 
-  // Generate FAQPage JSON-LD for SEO/GEO (+40% AI search visibility)
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -61,95 +59,70 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section className="py-24 md:py-28">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
-          {/* 标题 */}
-          <BlurFade inView>
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-3xl md:text-4xl font-bold mb-4"
-              >
-                {t("title")}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="text-lg text-muted-foreground"
-              >
-                {t("subtitle")}
-              </motion.p>
-            </div>
-          </BlurFade>
+        <div className="mx-auto max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-120px" }}
+            transition={{ duration: 0.4 }}
+            className="text-center"
+          >
+            <h2 className="text-balance text-3xl font-semibold text-[#0B0F1A] md:text-5xl">
+              {t("title")}
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-pretty text-base text-[#0B0F1A]/70 md:text-lg">
+              {t("subtitle")}
+            </p>
+          </motion.div>
 
-          {/* FAQ 列表 */}
-          <BlurFade delay={0.2} inView>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <Accordion type="single" collapsible className="space-y-3">
-                {faqData.map((item, index) => (
-                  <motion.div
-                    key={item.questionKey}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 * index }}
-                  >
-                    <AccordionItem
-                      value={`faq-${index}`}
-                      className="px-6 rounded-2xl border border-border bg-background/50 backdrop-blur-sm hover:border-primary/30 transition-colors"
-                    >
-                      <AccordionTrigger className="text-left hover:no-underline cursor-pointer py-4">
-                        <span className="flex items-center gap-3">
-                          <span className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xs font-semibold">
-                            {index + 1}
-                          </span>
-                          <span className="font-medium">{t(item.questionKey)}</span>
-                        </span>
-                      </AccordionTrigger>
-                      <AccordionContent className="pl-10 text-muted-foreground leading-relaxed">
-                        {t(item.answerKey)}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
-            </motion.div>
-          </BlurFade>
-
-          {/* 底部提示 */}
-          <BlurFade delay={0.4} inView>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="text-center mt-12 p-6 rounded-2xl bg-primary/10 border border-primary/20"
-            >
-              <p className="text-muted-foreground">
-                {t("contact")}
-                <a
-                  href="mailto:support@videofly.app"
-                  className="text-primary hover:underline mx-1"
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.4, delay: 0.08 }}
+            className="mt-10"
+          >
+            <Accordion type="single" collapsible className="space-y-3">
+              {faqData.map((item, index) => (
+                <AccordionItem
+                  key={item.questionKey}
+                  value={`faq-${index}`}
+                  className="rounded-2xl border border-[#E5E7EB] bg-[#F5F7FB] px-5"
                 >
-                  support@videofly.app
-                </a>
-              </p>
-            </motion.div>
-          </BlurFade>
+                  <AccordionTrigger className="cursor-pointer py-4 text-left font-medium text-[#0B0F1A] hover:no-underline">
+                    <span className="flex items-center gap-3">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1E2A78]/10 text-xs font-semibold text-[#1E2A78]">
+                        {index + 1}
+                      </span>
+                      <span>{t(item.questionKey)}</span>
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="pl-10 leading-relaxed text-[#0B0F1A]/70">
+                    {t(item.answerKey)}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.35, delay: 0.16 }}
+            className="mt-8 text-center text-sm text-[#0B0F1A]/65"
+          >
+            {t("contact")}{" "}
+            <a href="mailto:support@videofly.app" className="font-medium text-[#1E2A78] hover:underline">
+              support@videofly.app
+            </a>
+          </motion.p>
         </div>
       </div>
     </section>

@@ -9,15 +9,20 @@
 
 const PROXY_URL = process.env.HTTPS_PROXY || process.env.HTTP_PROXY;
 
+type UndiciModule = {
+  ProxyAgent: new (proxyUrl: string) => unknown;
+  setGlobalDispatcher: (dispatcher: unknown) => void;
+};
+
 if (PROXY_URL) {
   try {
     // Note: In Next.js server context, undici might not be directly importable
     // We'll use a dynamic require/import approach
-    let undici;
+    let undici: UndiciModule | undefined;
 
     // Try CommonJS require first (for server-side compatibility)
     try {
-      undici = require("undici");
+      undici = require("undici") as UndiciModule;
     } catch (e) {
       // If require fails, undici is built into Node.js 18+
       // Skip proxy setup in this case

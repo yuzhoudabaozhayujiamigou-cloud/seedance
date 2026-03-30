@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
                 <p>Last updated: {new Date().getFullYear()}</p>
 
                 <h2>1. Introduction</h2>
-                <p>Welcome to VideoFly. We respect your privacy and are committed to protecting your personal data.</p>
+                <p>Welcome to Seedance. We respect your privacy and are committed to protecting your personal data.</p>
 
                 <h2>2. Data We Collect</h2>
                 <p>We collect information you provide directly to us when you create an account, generate videos, or contact support.</p>

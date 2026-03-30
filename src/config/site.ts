@@ -23,7 +23,7 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "VideoFly",
+  name: "Seedance",
   description:
     "AI product video generator for ecommerce video ads powered by Seedance 2.0",
   url: process.env.NEXT_PUBLIC_APP_URL || "https://videofly.app",

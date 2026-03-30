@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "VideoFly - AI 视频生成平台",
+    "title": "Seedance - AI 视频生成平台",
     "description": "使用 Sora 2、Veo 3.1 等模型在几分钟内创建惊人的 AI 视频"
   },
   "Common": {
@@ -31,23 +31,13 @@
     "api": "API"
   },
   "Hero": {
-    "badge": "支持 Sora 2、Veo 3.1 等模型",
-    "title": "将您的想法转化为精彩视频",
-    "subtitle": "使用 AI",
-    "description": "在几分钟内创建专业的 AI 生成视频。支持文本转视频、图片转视频，或增强现有素材。",
-    "startCreating": "免费开始创作",
-    "viewExamples": "查看示例",
-    "features": {
-      "fast": "闪电般快速",
-      "easy": "简单易用",
-      "ai": "AI 驱动"
-    },
-    "stats": {
-      "videos": "个视频已创建",
-      "users": "位满意用户",
-      "rating": "用户评分"
-    },
-    "creditsHint": "{credits} 个免费积分开始 • 无需信用卡"
+    "badge": "面向电商广告的 Seedance 1.5",
+    "title": "几分钟生成产品广告视频。",
+    "description": "上传商品图，选择模板格式，即可生成可发布的视频创意。",
+    "startCreating": "立即生成",
+    "viewExamples": "查看模板",
+    "creditsHint": "$1 一次性试用包，含 1 条视频（每个账号仅限一次）。",
+    "noModels": "当前 AI Provider 配置下没有可用模型。"
   },
   "Notifications": {
     "generationWillNotify": "生成时间较长，我们会在生成完成后通知你。",
@@ -86,177 +76,125 @@
     "download": "下载"
   },
   "Showcase": {
-    "badge": "亲眼见证",
-    "title": "使用 VideoFly 创作",
-    "subtitle": "AI 生成的精彩视频",
-    "description": "探索我们社区使用 AI 视频生成创作的精彩作品。从电影级风景到产品动画，无所不能。",
-    "ctaText": "准备好创作自己的杰作了吗？",
-    "ctaButton": "立即开始创作"
-  },
-  "Features": {
-    "badge": "强大功能",
-    "title": "您需要的一切",
-    "subtitle": "强大的功能助您创建精彩视频",
-    "description": "探索让视频创作变得简单有趣的工具和功能",
-    "learnMore": "了解更多",
-    "bottomCTA": {
-      "text": "准备好将您的想法转化为视频了吗？",
-      "button": "立即开始创作"
-    },
-    "textToVideo": {
-      "title": "文本转视频",
-      "description": "使用先进的 AI 模型将文本提示转化为精彩视频",
-      "stat": "生成速度"
-    },
-    "imageToVideo": {
-      "title": "图片转视频",
-      "description": "用 AI 让您的图片动起来，赋予生命",
-      "stat": "最高分辨率"
-    },
-    "referenceGen": {
-      "title": "参考生成",
-      "description": "上传图片或视频作为参考，引导 AI 生成。提取镜头轨迹、运动模式和风格，实现精准控制",
-      "stat": "参考输入"
-    },
-    "enhancement": {
-      "title": "视频增强",
-      "description": "使用 AI 放大、增强和扩展现有视频",
-      "stat": "AI 模型"
-    },
-    "fast": {
-      "title": "闪电般快速",
-      "description": "仅需 2-5 分钟即可生成专业视频"
-    },
-    "secure": {
-      "title": "安全私密",
-      "description": "您的数据已加密，视频安全存储"
-    },
-    "realtime": {
-      "title": "实时更新",
-      "description": "实时跟踪视频生成进度"
-    },
-    "formats": {
-      "title": "多种格式",
-      "description": "支持多种宽高比，适用于任何平台"
-    },
-    "ai": {
-      "title": "先进 AI",
-      "description": "由最新的 AI 视频生成模型驱动"
-    },
-    "browseAll": "查看全部模板",
-    "categories": {
-      "tiktok": {
-        "title": "TikTok UGC",
-        "description": "面向短视频投放的真人口播与种草风格模板。"
-      },
-      "reels": {
-        "title": "Instagram Reels",
-        "description": "为 Reels 优化的竖版节奏与字幕呈现模板。"
-      },
-      "amazon": {
-        "title": "Amazon Listing",
-        "description": "适合亚马逊商品详情页的视频展示模板。"
+    "badge": "示例预览",
+    "title": "先看成片，再开始投放",
+    "description": "浏览适用于信息流、商品详情页和演示场景的参考样式。",
+    "ctaText": "查看更多案例，并套用到你的商品上。",
+    "ctaButton": "查看全部示例",
+    "items": {
+      "ugc": {
+        "tag": "UGC 风格",
+        "title": "创作者口吻的社媒广告",
+        "description": "适配投流与自然流量的竖版开场型创意。"
       },
       "demo": {
-        "title": "Product Demo",
-        "description": "突出功能与使用场景的产品演示模板。"
+        "tag": "产品演示",
+        "title": "功能导向的演示视频",
+        "description": "清晰展示使用步骤、场景和效果。"
       },
-      "beforeAfter": {
-        "title": "Before/After",
-        "description": "强化效果对比的前后对照类创意模板。"
+      "listing": {
+        "tag": "详情页短片",
+        "title": "适配电商详情页的视频",
+        "description": "用于商品页与平台列表场景的简短展示。"
+      }
+    }
+  },
+  "Features": {
+    "badge": "为什么选择 Seedance",
+    "title": "聚焦工作流，而不是复杂剪辑器",
+    "description": "三个核心能力，覆盖电商广告从想法到导出的主要环节。",
+    "browseAll": "浏览模板",
+    "items": {
+      "quality": {
+        "title": "稳定的运动质量",
+        "description": "模型针对商品主体展示进行了优化，画面表达更连贯。"
+      },
+      "workflow": {
+        "title": "提示词 + 图片一体流程",
+        "description": "支持从文本、商品图或参考素材直接生成。"
+      },
+      "delivery": {
+        "title": "多渠道可用输出",
+        "description": "结果可直接用于广告、社媒和商品详情页。"
       }
     }
   },
   "HowItWorks": {
-    "badge": "简单流程",
-    "title": "使用方法",
-    "subtitle": "4 步创建您的视频",
-    "description": "使用直观的视频创作工作流程，几分钟内即可开始",
-    "bottomHint": "无需信用卡 • {credits} 个免费积分开始",
-    "cta": "立即开始创作",
+    "badge": "使用流程",
+    "title": "三步把商品图变成广告视频",
+    "description": "统一在一个流程里完成简报、生成与发布。",
+    "cta": "立即生成",
     "steps": {
       "prompt": {
-        "title": "描述您的视频",
-        "description": "输入详细的文本提示，描述您想创建的视频",
-        "stat": "平均时间"
+        "title": "填写创意简报",
+        "description": "说明卖点、目标人群和想要的画面风格。"
       },
       "upload": {
-        "title": "上传参考",
-        "description": "可选择添加参考图片来引导 AI（可选）",
-        "stat": "支持格式"
+        "title": "上传商品素材",
+        "description": "上传商品图或参考图，并选择输出格式。"
       },
       "generate": {
-        "title": "AI 生成",
-        "description": "我们的 AI 处理您的请求并创建独特视频",
-        "stat": "生成时间"
-      },
-      "download": {
-        "title": "下载分享",
-        "description": "获取高清视频，随时随地分享",
-        "stat": "最高质量"
+        "title": "生成并筛选",
+        "description": "批量生成方案，对比后发布最合适的版本。"
       }
     }
   },
   "CTA": {
-    "badge": "限时优惠",
-    "title": "准备好创作精彩视频了吗？",
-    "subtitle": "加入数千名正在使用 VideoFly 的创作者",
-    "description": "立即开始使用我们的免费试用创建专业视频",
-    "getStarted": "免费开始",
-    "learnMore": "了解更多",
+    "badge": "准备开始",
+    "title": "用 Seedance 生成你的下一条产品广告",
+    "description": "打开生成器，选择模型，今天就发布第一条创意。",
+    "getStarted": "立即生成",
+    "viewPricing": "查看定价",
     "benefits": {
-      "free": "{credits} 个免费积分开始",
-      "noCard": "无需信用卡",
-      "cancel": "随时取消",
-      "support": "7x24 客户支持"
+      "free": "$1 一次性试用包（1 条视频，每个账号仅限一次）",
+      "noCard": "可直接开始生成",
+      "cancel": "可随时选择 Starter、Pro 或 Business",
+      "support": "提供邮件支持"
     },
-    "generating": "生成中...",
-    "readyIn": "就绪时间",
-    "minutes": "分钟",
-    "from": "来自",
-    "reviews": "条评价",
-    "testimonials": {
-      "title": "创作者喜爱",
-      "subtitle": "看看用户怎么说"
+    "panel": {
+      "title": "接下来可以做什么",
+      "headline": "在一个工作台里完成生成、筛选和迭代。",
+      "description": "先在首页快速出稿，再到工作区管理历史结果和重试任务。",
+      "note": "建议：保存不同提示词版本，在 My Creations 中对比效果。"
     }
   },
   "FAQ": {
     "title": "常见问题",
-    "subtitle": "关于 VideoFly 的一切",
-    "contact": "还有其他问题？请联系我们",
+    "subtitle": "关于生成、商用权限与积分规则的核心说明。",
+    "contact": "需要帮助？请联系",
     "general": {
-      "question": "什么是 VideoFly？",
-      "answer": "VideoFly 是一个领先的 AI 视频生成平台，让您能在几分钟内将文本和图片转化为高质量视频。由 Sora 2 和 Veo 3.1 等先进模型驱动，无需昂贵的设备即可让您的创意变为现实。"
+      "question": "Seedance 适合哪些团队？",
+      "answer": "适合需要快速产出商品广告视频的卖家、品牌团队和代理商。"
     },
     "commercial": {
-      "question": "我可以将视频用于商业用途吗？",
-      "answer": "可以！使用我们的专业版和团队版计划生成的视频包含完整的商业许可，您可以将其用于营销、社交媒体和商业项目中。"
+      "question": "生成内容可以用于商业投放吗？",
+      "answer": "可以。具体商用范围以你当前套餐条款为准。"
     },
     "aiModels": {
-      "question": "你们使用哪些 AI 模型？",
-      "answer": "我们会集成业界最顶尖的视频生成模型，包括 Sora 2、Veo 3.1 等。我们会持续更新平台，确保为您提供最新、最强大的模型能力。"
+      "question": "平台支持哪些模型？",
+      "answer": "可用模型取决于当前 Provider 配置，后续会按配置持续更新。"
     },
     "credits": {
-      "question": "积分系统是如何工作的？",
-      "answer": "您使用积分来生成视频。不同的模型和视频时长会消耗不同数量的积分。您可以购买积分包或订阅月度计划，以优惠价格获取稳定的积分。"
+      "question": "积分如何扣费？",
+      "answer": "每次生成会根据模型和参数消耗积分。月度套餐包含固定积分额度。"
     },
     "refund": {
-      "question": "提供退款吗？",
-      "answer": "我们提供满意度保证。如果因系统错误导致视频生成失败，我们将退还积分。对于订阅付款，如果您不满意，请在 7 天内联系我们的支持团队。"
+      "question": "月度积分会自动结转吗？",
+      "answer": "积分按账单周期发放。是否结转请以当前套餐说明为准。"
     },
     "support": {
-      "question": "如何获取支持？",
-      "answer": "我们的专属支持团队 7x24 小时待命。您可以通过网站上的联系表格或发送邮件至 support@videofly.app 联系我们。"
+      "question": "如何联系支持团队？",
+      "answer": "可发送邮件至 support@videofly.app 获取账单和生成相关支持。"
     }
   },
   "Footer": {
     "product": "产品",
-    "company": "公司",
     "legal": "法律",
-    "copyright": "© {year} VideoFly. 保留所有权利。",
+    "copyright": "© {year} Seedance. 保留所有权利。",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "cookie": "Cookie 政策"
+    "description": "Seedance 帮助电商团队高效、稳定地生成产品视频创意。",
+    "madeBy": "由 Seedance 团队打造"
   },
   "Credits": {
     "title": "积分",
@@ -385,7 +323,7 @@
   },
   "SignInModal": {
     "signin_title": "登录您的账户",
-    "signin_subtitle": "立即开始使用 VideoFly",
+    "signin_subtitle": "立即开始使用 Seedance",
     "privacy": "继续即表示您同意我们的服务条款和隐私政策。",
     "continue_google": "使用 Google 继续",
     "continue_email": "使用邮箱继续",
@@ -394,10 +332,10 @@
     "terms_notice": "继续即表示您同意我们的服务条款和隐私政策。"
   },
   "MainNav": {
-    "introducing": "介绍 VideoFly"
+    "introducing": "介绍 Seedance"
   },
   "SiteFooter": {
-    "copyright": "© {currentYear} VideoFly. 保留所有权利。"
+    "copyright": "© {currentYear} Seedance. 保留所有权利。"
   },
   "Mail": {
     "common": {
@@ -405,11 +343,11 @@
       "copyright": "© {year} 保留所有权利。"
     },
     "welcome": {
-      "subject": "欢迎加入 VideoFly！",
+      "subject": "欢迎加入 Seedance！",
       "greeting": "您好 {name}，",
-      "title": "欢迎来到 VideoFly！",
-      "body": "感谢您注册 VideoFly！我们很高兴您的加入。",
-      "features": "使用 VideoFly，您可以：",
+      "title": "欢迎来到 Seedance！",
+      "body": "感谢您注册 Seedance！我们很高兴您的加入。",
+      "features": "使用 Seedance，您可以：",
       "featuresList": {
         "generate": "在几分钟内生成精彩的 AI 视频",
         "models": "使用 Sora 2、Veo 3.1 等多种 AI 模型",
@@ -422,7 +360,7 @@
       "subject": "重置您的密码",
       "greeting": "您好 {name}，",
       "title": "重置您的密码",
-      "body": "我们收到了您重置 VideoFly 账户密码的请求。",
+      "body": "我们收到了您重置 Seedance 账户密码的请求。",
       "instruction": "点击下方按钮重置您的密码：",
       "button": "重置密码",
       "validity": "此链接将在 30 分钟后过期，且只能使用一次。",
@@ -431,10 +369,10 @@
       "footer": "如果您没有请求此操作，请忽略此邮件。"
     },
     "magicLink": {
-      "subject": "登录 VideoFly",
+      "subject": "登录 Seedance",
       "greeting": "您好 {name}，",
-      "title": "登录 VideoFly",
-      "body": "我们收到了您登录 VideoFly 账户的请求。",
+      "title": "登录 Seedance",
+      "body": "我们收到了您登录 Seedance 账户的请求。",
       "instruction": "点击下方按钮登录：",
       "button": "登录",
       "validity": "此链接将在 24 小时后过期。",
@@ -444,11 +382,11 @@
   },
   "Emails": {
     "welcome": {
-      "subject": "欢迎加入 VideoFly！",
+      "subject": "欢迎加入 Seedance！",
       "greeting": "您好 {name}，",
-      "title": "欢迎来到 VideoFly！",
-      "body": "感谢您注册 VideoFly！我们很高兴您的加入。",
-      "features": "使用 VideoFly，您可以：",
+      "title": "欢迎来到 Seedance！",
+      "body": "感谢您注册 Seedance！我们很高兴您的加入。",
+      "features": "使用 Seedance，您可以：",
       "featuresList": {
         "generate": "在几分钟内生成精彩的 AI 视频",
         "models": "使用 Sora 2、Veo 3.1 等多种 AI 模型",
@@ -456,20 +394,20 @@
       },
       "cta": "开始创作视频",
       "footer": "如果您有任何问题，欢迎随时联系我们的支持团队。",
-      "copyright": "© {year} VideoFly. 保留所有权利。"
+      "copyright": "© {year} Seedance. 保留所有权利。"
     },
     "resetPassword": {
       "subject": "重置您的密码",
       "greeting": "您好 {name}，",
       "title": "重置您的密码",
-      "body": "我们收到了您重置 VideoFly 账户密码的请求。",
+      "body": "我们收到了您重置 Seedance 账户密码的请求。",
       "instruction": "点击下方按钮重置您的密码：",
       "button": "重置密码",
       "validity": "此链接将在 30 分钟后过期，且只能使用一次。",
       "ignore": "如果您没有请求重置密码，可以安全地忽略此邮件。",
       "security": "出于安全考虑，此链接将在 30 分钟后过期。",
       "footer": "如果您没有请求此操作，请忽略此邮件。",
-      "copyright": "© {year} VideoFly. 保留所有权利。"
+      "copyright": "© {year} Seedance. 保留所有权利。"
     }
   },
   "dashboard": {
@@ -566,5 +504,64 @@
     "copyLink": "复制链接",
     "removeFromHistory": "从历史中移除",
     "generationFailed": "生成失败"
+  },
+  "Testimonials": {
+    "badge": "用户反馈",
+    "title": "团队在使用 Seedance 后的评价",
+    "description": "来自真实电商工作流的使用感受。",
+    "items": {
+      "seller": {
+        "name": "Maya L.",
+        "role": "独立站运营",
+        "quote": "新角度测试速度快了很多，几分钟就能拿到第一版素材。"
+      },
+      "brand": {
+        "name": "Connor T.",
+        "role": "平台品牌经理",
+        "quote": "流程清晰，商品团队也能快速上手，产出的广告片段可直接使用。"
+      },
+      "team": {
+        "name": "Nina P.",
+        "role": "创意策略师",
+        "quote": "一份商品简报就能生成多个版本，便于我们快速做投放测试。"
+      }
+    }
+  },
+  "PricingLanding": {
+    "badge": "定价",
+    "title": "先用 $1 试用，再按需扩展",
+    "description": "已移除免费档。按你的月度产出量选择方案。",
+    "oneTime": "一次性",
+    "perMonth": "/月",
+    "startGenerating": "立即生成",
+    "note": "试用包包含 1 条视频，每个账号仅可购买一次。",
+    "features": {
+      "trialLimit": "试用包包含 1 条视频",
+      "modelAccess": "可使用 Seedance 视频生成模型",
+      "commercial": "包含商业使用权限",
+      "flexible": "可按需升级、降级或暂停"
+    },
+    "plans": {
+      "trial": {
+        "name": "Trial",
+        "meta": "1 条视频，仅限每账号一次",
+        "description": "一次性试用包，用于快速验证 Seedance 的生成质量与速度。"
+      },
+      "starter": {
+        "name": "Starter",
+        "meta": "月度入门方案",
+        "description": "适合个人创作者和小型店铺进行稳定产出。"
+      },
+      "pro": {
+        "name": "Pro",
+        "meta": "月度增长方案",
+        "description": "适合需要持续测试广告角度并高频更新素材的团队。"
+      },
+      "business": {
+        "name": "Business",
+        "meta": "月度规模方案",
+        "description": "适合品牌与代理商进行多商品高产能创意生产。"
+      }
+    }
   }
 }
