@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { Sparkles, Zap, Play, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { toast } from "sonner";
@@ -13,13 +13,9 @@ import {
   DEFAULT_CONFIG,
   DEFAULT_DEFAULTS,
 } from "@/components/video-generator";
-import { BlurFade } from "@/components/magicui/blur-fade";
-import { Meteors } from "@/components/magicui/meteors";
-import { cn } from "@/components/ui";
 import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth/client";
 import { calculateModelCredits, getAvailableModels } from "@/config/credits";
-import { NEW_USER_GIFT } from "@/config/pricing-user";
 import { uploadImage } from "@/lib/video-api";
 import { useSigninModal } from "@/hooks/use-signin-modal";
 import { videoTaskStorage } from "@/lib/video-task-storage";
@@ -63,14 +59,6 @@ interface HeroSectionProps {
   currentProvider?: ProviderType;
 }
 
-/**
- * Hero Section - 视频生成器优先设计
- *
- * 设计模式: Video-First Hero with Glassmorphism
- * - Hero 区域直接集成视频生成组件
- * - Glassmorphism 风格: 背景模糊、透明层、微妙边框
- * - Magic UI 动画组件增强交互体验
- */
 export function HeroSection({ currentProvider }: HeroSectionProps) {
   const t = useTranslations("Hero");
   const tNotify = useTranslations("Notifications");
@@ -151,7 +139,7 @@ export function HeroSection({ currentProvider }: HeroSectionProps) {
       quality: params.resolution,
     });
     return baseCredits * params.outputNumber;
-  }, [defaultDuration, parseDuration]);
+  }, [defaultDuration]);
 
   const resolveImageUrls = async (data: SubmitData) => {
     if (data.images && data.images.length > 0) {
@@ -239,7 +227,6 @@ export function HeroSection({ currentProvider }: HeroSectionProps) {
     } catch (error) {
       console.error("Generation error:", error);
       const message = error instanceof Error ? error.message : "Failed to generate video. Please try again.";
-      // Check for common errors and provide helpful messages
       if (message.includes("credits") || message.includes("Credit")) {
         toast.error("Insufficient credits. Please top up and try again.");
       } else if (message.includes("database") || message.includes("DATABASE_URL")) {
@@ -299,7 +286,6 @@ export function HeroSection({ currentProvider }: HeroSectionProps) {
       return;
     }
 
-    // Check for notification permission
     if (typeof window !== "undefined" && "Notification" in window) {
       const asked = localStorage.getItem(NOTIFICATION_ASKED_KEY);
       if (!asked && Notification.permission === "default") {
@@ -313,128 +299,97 @@ export function HeroSection({ currentProvider }: HeroSectionProps) {
   };
 
   return (
-    <section id="generator" className="relative min-h-screen overflow-hidden pb-20">
-      {/* 动画流星效果 */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <Meteors number={15} minDelay={0.5} maxDelay={2} minDuration={3} maxDuration={8} />
-      </div>
+    <section id="generator" className="relative min-h-[100svh] overflow-hidden">
+      <video
+        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        poster="/og.png"
+      >
+        <source
+          src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          type="video/mp4"
+        />
+      </video>
 
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="flex flex-col items-center gap-10">
-          {/* 标题与说明区域 */}
-          <motion.div
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-center space-y-6 max-w-3xl mx-auto"
-          >
-            {/* Badge */}
-            <BlurFade delay={0.05} inView>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-                <Sparkles className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-primary">
-                  {t("badge")}
-                </span>
-              </div>
-            </BlurFade>
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(11,15,26,0.58),rgba(11,15,26,0.78))]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_30%,rgba(245,247,251,0.12),rgba(11,15,26,0.82)_70%)]" />
+      <div
+        className="absolute inset-0 -z-10 opacity-[0.16]"
+        style={{
+          backgroundImage: "url('/images/noise.webp')",
+          backgroundSize: "220px 220px",
+        }}
+      />
 
-            {/* 主标题 */}
-            <BlurFade delay={0.1} inView>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                {t("title")}
-              </h1>
-            </BlurFade>
+      <div className="container relative z-10 mx-auto px-4 pb-16 pt-24 md:pt-28">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+          className="mx-auto max-w-3xl text-center text-[#F5F7FB]"
+        >
+          <p className="mx-auto inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em]">
+            {t("badge")}
+          </p>
+          <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight md:text-6xl">
+            {t("title")}
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-pretty text-base text-[#F5F7FB]/85 md:text-lg">
+            {t("description")}
+          </p>
 
-            {/* 描述 */}
-            <BlurFade delay={0.2} inView>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                {t("description")}
-              </p>
-            </BlurFade>
-
-            {/* 双 CTA */}
-            <BlurFade delay={0.28} inView>
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                <LocaleLink href="/#generator">
-                  <Button size="lg" className="rounded-full px-6">
-                    {t("startCreating")}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </LocaleLink>
-                <LocaleLink href="/templates">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="rounded-full border-primary/30 bg-white/65 px-6 backdrop-blur-md"
-                  >
-                    {t("viewExamples")}
-                  </Button>
-                </LocaleLink>
-              </div>
-            </BlurFade>
-
-            {/* 特性标签 */}
-            <BlurFade delay={0.3} inView className="flex flex-wrap justify-center gap-3">
-              {[
-                { icon: Zap, label: t("features.fast"), color: "text-yellow-500" },
-                { icon: Play, label: t("features.easy"), color: "text-primary" },
-                { icon: Sparkles, label: t("features.ai"), color: "text-primary" },
-              ].map((feature, idx) => {
-                const Icon = feature.icon;
-                return (
-                  <motion.div
-                    key={feature.label}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.4 + idx * 0.1 }}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted/60 dark:bg-white/10 backdrop-blur-sm border border-border/50"
-                  >
-                    <Icon className={cn("h-4 w-4", feature.color)} />
-                    <span className="text-sm font-medium">{feature.label}</span>
-                  </motion.div>
-                );
-              })}
-            </BlurFade>
-          </motion.div>
-
-          {/* 视频生成器 - 核心组件 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            className="w-full max-w-4xl mx-auto relative"
-          >
-            {/* 装饰性光晕效果 */}
-            <div className="absolute -inset-4 rounded-3xl blur-3xl -z-10 opacity-30 dark:opacity-10" style={{ backgroundImage: "linear-gradient(to right, oklch(from var(--primary) l c h), oklch(from var(--primary) l c calc(h + 30)))" }} />
-
-            {/* 视频生成器 - 不需要外层容器，直接使用组件 */}
-            {generatorConfig.videoModels.length > 0 ? (
-              <VideoGeneratorInput
-                config={generatorConfig}
-                defaults={generatorDefaults}
-                isLoading={isSubmitting}
-                disabled={isSubmitting}
-                calculateCredits={calculateCredits}
-                onSubmit={handleSubmit}
-              />
-            ) : (
-              <div className="rounded-3xl border border-border bg-card/80 p-8 text-center text-sm text-muted-foreground">
-                No enabled models are available for the current AI provider configuration.
-              </div>
-            )}
-
-            {NEW_USER_GIFT.enabled && NEW_USER_GIFT.credits > 0 && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="text-center text-xs text-muted-foreground mt-4"
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <LocaleLink href="/#generator">
+              <Button
+                size="lg"
+                className="rounded-full bg-[#FF6A00] px-7 text-white hover:bg-[#E55F00]"
               >
-                {t("creditsHint", { credits: NEW_USER_GIFT.credits })}
-              </motion.p>
-            )}
-          </motion.div>
-        </div>
+                {t("startCreating")}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </LocaleLink>
+
+            <LocaleLink href="/templates">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full border-white/50 bg-white/10 px-7 text-[#F5F7FB] hover:bg-white/20 hover:text-[#F5F7FB]"
+              >
+                {t("viewExamples")}
+              </Button>
+            </LocaleLink>
+          </div>
+
+          <p className="mt-4 text-sm text-[#F5F7FB]/80">
+            {t("creditsHint")}
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+          className="mx-auto mt-10 max-w-5xl rounded-3xl border border-white/35 bg-[#F5F7FB]/92 p-2 shadow-[0_30px_120px_rgba(11,15,26,0.35)] backdrop-blur"
+        >
+          {generatorConfig.videoModels.length > 0 ? (
+            <VideoGeneratorInput
+              config={generatorConfig}
+              defaults={generatorDefaults}
+              isLoading={isSubmitting}
+              disabled={isSubmitting}
+              calculateCredits={calculateCredits}
+              onSubmit={handleSubmit}
+            />
+          ) : (
+            <div className="rounded-2xl border border-[#E5E7EB] bg-white p-8 text-center text-sm text-[#0B0F1A]/70">
+              {t("noModels")}
+            </div>
+          )}
+        </motion.div>
       </div>
 
       <AlertDialog open={showNotifyDialog} onOpenChange={setShowNotifyDialog}>

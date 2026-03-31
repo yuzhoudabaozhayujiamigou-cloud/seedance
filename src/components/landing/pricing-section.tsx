@@ -1,99 +1,91 @@
 import { Check } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 import { LocaleLink } from "@/i18n/navigation";
 
-const plans = [
-  {
-    name: "Free",
-    price: "$0",
-    cadence: "/month",
-    videos: "3 videos/month",
-    description: "Perfect for testing product concepts",
-    featured: false,
-  },
-  {
-    name: "Starter",
-    price: "$9",
-    cadence: "/month",
-    videos: "15 videos/month",
-    description: "For solo Shopify, Amazon, or Etsy sellers",
-    featured: false,
-  },
-  {
-    name: "Pro",
-    price: "$19",
-    cadence: "/month",
-    videos: "30 videos/month",
-    description: "For growth-stage stores running ad tests weekly",
-    featured: true,
-  },
-  {
-    name: "Business",
-    price: "$49",
-    cadence: "/month",
-    videos: "80 videos/month",
-    description: "For teams managing larger product catalogs",
-    featured: false,
-  },
-] as const;
+type PlanKey = "trial" | "starter" | "pro" | "business";
 
-export function PricingSection() {
+const plans: Array<{
+  key: PlanKey;
+  price: string;
+  cadenceKey: "oneTime" | "perMonth";
+  featured?: boolean;
+}> = [
+  { key: "trial", price: "$1", cadenceKey: "oneTime" },
+  { key: "starter", price: "$9", cadenceKey: "perMonth" },
+  { key: "pro", price: "$19", cadenceKey: "perMonth", featured: true },
+  { key: "business", price: "$49", cadenceKey: "perMonth" },
+];
+
+export async function PricingSection() {
+  const t = await getTranslations("PricingLanding");
+
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
+    <section className="bg-[#F5F7FB] py-24 md:py-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">Credit-Based Pricing for Ecommerce Video Ads</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Start free, scale as you grow, and only pay for the video volume you need.
+          <p className="inline-flex rounded-full border border-[#E5E7EB] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#1E2A78]">
+            {t("badge")}
+          </p>
+          <h2 className="mt-6 text-balance text-3xl font-semibold text-[#0B0F1A] md:text-5xl">
+            {t("title")}
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-base text-[#0B0F1A]/70 md:text-lg">
+            {t("description")}
           </p>
         </div>
 
         <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
           {plans.map((plan) => (
             <article
-              key={plan.name}
-              className={`rounded-2xl border p-6 backdrop-blur-md ${
+              key={plan.key}
+              className={`rounded-2xl border p-6 shadow-[0_10px_30px_rgba(11,15,26,0.05)] transition-transform duration-300 hover:-translate-y-1 ${
                 plan.featured
-                  ? "border-primary/40 bg-white/78 shadow-[0_14px_40px_rgba(30,42,120,0.14)]"
-                  : "border-white/65 bg-white/72 shadow-[0_10px_30px_rgba(30,42,120,0.08)]"
+                  ? "border-[#1E2A78]/30 bg-white"
+                  : "border-[#E5E7EB] bg-[#F5F7FB]"
               }`}
             >
-              <p className="text-sm font-semibold uppercase tracking-wide text-primary">{plan.name}</p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-[#1E2A78]">
+                {t(`plans.${plan.key}.name`)}
+              </p>
               <div className="mt-4 flex items-end gap-1">
-                <span className="text-3xl font-bold">{plan.price}</span>
-                <span className="pb-1 text-sm text-muted-foreground">{plan.cadence}</span>
+                <span className="text-3xl font-semibold text-[#0B0F1A]">{plan.price}</span>
+                <span className="pb-1 text-sm text-[#0B0F1A]/60">{t(plan.cadenceKey)}</span>
               </div>
-              <p className="mt-2 text-sm font-medium">{plan.videos}</p>
-              <p className="mt-3 text-sm text-muted-foreground">{plan.description}</p>
+              <p className="mt-2 text-sm font-medium text-[#0B0F1A]/80">
+                {t(`plans.${plan.key}.meta`)}
+              </p>
+              <p className="mt-3 text-sm text-[#0B0F1A]/70">
+                {t(`plans.${plan.key}.description`)}
+              </p>
 
-              <ul className="mt-5 space-y-2 text-sm text-foreground/90">
+              <ul className="mt-5 space-y-2 text-sm text-[#0B0F1A]/85">
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  Seedance 2.0 product video generation
+                  <Check className="h-4 w-4 text-[#1E2A78]" />
+                  {plan.key === "trial" ? t("features.trialLimit") : t("features.modelAccess")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  TikTok, Reels, and listing-ready formats
+                  <Check className="h-4 w-4 text-[#1E2A78]" />
+                  {t("features.commercial")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  Commercial usage included
+                  <Check className="h-4 w-4 text-[#1E2A78]" />
+                  {t("features.flexible")}
                 </li>
               </ul>
 
               <LocaleLink
                 href="/#generator"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[#1E2A78] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#19235F]"
               >
-                Start Generating
+                {t("startGenerating")}
               </LocaleLink>
             </article>
           ))}
         </div>
 
-        <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-primary/20 bg-white/70 p-4 text-center text-sm backdrop-blur-md">
-          <span className="font-semibold text-primary">Need more volume?</span>{" "}
-          Buy extra credits at <span className="font-semibold">$0.99 per extra video</span>.
+        <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#E5E7EB] bg-white p-4 text-center text-sm text-[#0B0F1A]/70">
+          {t("note")}
         </div>
       </div>
     </section>

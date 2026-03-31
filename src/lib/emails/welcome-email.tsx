@@ -68,7 +68,7 @@ export const WelcomeEmail = ({
                 color: "#18181b",
               }}
             >
-              VideoFly
+              Seedance
             </Text>
           </Section>
 

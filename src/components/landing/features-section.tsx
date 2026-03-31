@@ -1,76 +1,81 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Clapperboard,
-  PlayCircle,
-  ShoppingBag,
-  Smartphone,
-  Sparkles,
-} from "lucide-react";
+import { Rocket, SlidersHorizontal, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { BlurFade } from "@/components/magicui/blur-fade";
 import { LocaleLink } from "@/i18n/navigation";
 
-const categories = [
-  { key: "tiktok", icon: Smartphone },
-  { key: "reels", icon: PlayCircle },
-  { key: "amazon", icon: ShoppingBag },
-  { key: "demo", icon: Clapperboard },
-  { key: "beforeAfter", icon: Sparkles },
+const featureItems = [
+  { key: "quality", icon: Sparkles },
+  { key: "workflow", icon: SlidersHorizontal },
+  { key: "delivery", icon: Rocket },
 ] as const;
 
 export function FeaturesSection() {
   const t = useTranslations("Features");
 
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(30,42,120,0.08),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(255,106,0,0.08),transparent_45%)]" />
-
+    <section className="py-24 md:py-28">
       <div className="container mx-auto px-4">
-        <BlurFade inView>
-          <div className="mx-auto mb-14 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">{t("title")}</h2>
-            <p className="mt-4 text-lg text-muted-foreground">{t("description")}</p>
-          </div>
-        </BlurFade>
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-120px" }}
+          transition={{ duration: 0.4 }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <p className="inline-flex rounded-full border border-[#E5E7EB] bg-[#F5F7FB] px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#1E2A78]">
+            {t("badge")}
+          </p>
+          <h2 className="mt-6 text-balance text-3xl font-semibold text-[#0B0F1A] md:text-5xl">
+            {t("title")}
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-base text-[#0B0F1A]/70 md:text-lg">
+            {t("description")}
+          </p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
-          {categories.map((category, index) => {
-            const Icon = category.icon;
+        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-3">
+          {featureItems.map((item, index) => {
+            const Icon = item.icon;
             return (
-              <BlurFade key={category.key} delay={index * 0.08} inView>
-                <motion.div
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.45, delay: index * 0.08 }}
-                  className="h-full rounded-2xl border border-white/60 bg-white/72 p-5 backdrop-blur-md shadow-[0_10px_30px_rgba(30,42,120,0.07)]"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-4 text-lg font-semibold">{t(`categories.${category.key}.title`)}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {t(`categories.${category.key}.description`)}
-                  </p>
-                </motion.div>
-              </BlurFade>
+              <motion.article
+                key={item.key}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                className="rounded-2xl border border-[#E5E7EB] bg-[#F5F7FB] p-6 shadow-[0_10px_28px_rgba(11,15,26,0.04)] transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#1E2A78]/10 text-[#1E2A78]">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-5 text-lg font-semibold text-[#0B0F1A]">
+                  {t(`items.${item.key}.title`)}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#0B0F1A]/70">
+                  {t(`items.${item.key}.description`)}
+                </p>
+              </motion.article>
             );
           })}
         </div>
 
-        <BlurFade delay={0.35} inView>
-          <div className="mt-12 text-center">
-            <LocaleLink
-              href="/templates"
-              className="inline-flex items-center rounded-full border border-primary/30 bg-white/70 px-6 py-3 text-sm font-medium text-primary transition hover:bg-white"
-            >
-              {t("browseAll")}
-            </LocaleLink>
-          </div>
-        </BlurFade>
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.35, delay: 0.2 }}
+          className="mt-10 text-center"
+        >
+          <LocaleLink
+            href="/templates"
+            className="inline-flex items-center rounded-full border border-[#1E2A78]/20 bg-white px-6 py-3 text-sm font-medium text-[#1E2A78] transition-colors hover:bg-[#F5F7FB]"
+          >
+            {t("browseAll")}
+          </LocaleLink>
+        </motion.div>
       </div>
     </section>
   );

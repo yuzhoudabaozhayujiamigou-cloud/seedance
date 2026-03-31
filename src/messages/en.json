@@ -31,23 +31,13 @@
     "api": "API"
   },
   "Hero": {
-    "badge": "Built for Shopify, Amazon, and Etsy sellers",
-    "title": "AI Product Video Generator for Ecommerce Ads",
-    "subtitle": "with Seedance 2.0",
-    "description": "Turn product photos and descriptions into high-converting ecommerce video ads in minutes.",
-    "startCreating": "Generate Product Video",
-    "viewExamples": "Browse Templates",
-    "features": {
-      "fast": "Seedance 2.0 Powered",
-      "easy": "Built for Sellers",
-      "ai": "Ad-Ready Outputs"
-    },
-    "stats": {
-      "videos": "videos created",
-      "users": "happy users",
-      "rating": "user rating"
-    },
-    "creditsHint": "Start free with 3 videos/month • No credit card required"
+    "badge": "Seedance 1.5 for ecommerce video ads",
+    "title": "Generate product ads in minutes.",
+    "description": "Upload your product image, choose a format, and render launch-ready video creative without a production team.",
+    "startCreating": "Start Generating",
+    "viewExamples": "See templates",
+    "creditsHint": "$1 one-time trial pack includes 1 video (once per account).",
+    "noModels": "No enabled models are available for the current AI provider configuration."
   },
   "Notifications": {
     "generationWillNotify": "Generation may take a while. We'll notify you when it's ready.",
@@ -86,177 +76,125 @@
     "download": "Download"
   },
   "Showcase": {
-    "badge": "Examples",
-    "title": "Winning Ecommerce Ad Examples",
-    "subtitle": "Generated with Seedance 2.0",
-    "description": "See how sellers transform product assets into channel-ready creatives for paid and organic growth.",
-    "ctaText": "Explore conversion-focused styles and adapt them to your products.",
-    "ctaButton": "View All Examples"
-  },
-  "Features": {
-    "badge": "Template Library",
-    "title": "Template Categories for Ecommerce Video Ads",
-    "subtitle": "Built for every conversion funnel stage",
-    "description": "Pick a format, add your product angle, and generate channel-ready creatives fast.",
-    "learnMore": "Learn more",
-    "bottomCTA": {
-      "text": "Ready to transform your ideas into videos?",
-      "button": "Start Creating Now"
-    },
-    "textToVideo": {
-      "title": "Text to Video",
-      "description": "Transform your text prompts into stunning videos using advanced AI models",
-      "stat": "Generation speed"
-    },
-    "imageToVideo": {
-      "title": "Image to Video",
-      "description": "Animate your images and bring them to life with AI video generation",
-      "stat": "Max resolution"
-    },
-    "referenceGen": {
-      "title": "Reference Generation",
-      "description": "Upload images or videos as references to guide AI generation. Extract camera paths, motion patterns, and styles for precise control",
-      "stat": "Reference inputs"
-    },
-    "enhancement": {
-      "title": "Video Enhancement",
-      "description": "Upscale, enhance, and extend your existing videos with AI",
-      "stat": "AI models"
-    },
-    "fast": {
-      "title": "Lightning Fast",
-      "description": "Generate professional videos in just 2-5 minutes"
-    },
-    "secure": {
-      "title": "Secure & Private",
-      "description": "Your data is encrypted and videos are stored securely"
-    },
-    "realtime": {
-      "title": "Real-time Updates",
-      "description": "Track your video generation progress in real-time"
-    },
-    "formats": {
-      "title": "Multiple Formats",
-      "description": "Export in various aspect ratios for any platform"
-    },
-    "ai": {
-      "title": "Advanced AI",
-      "description": "Powered by the latest AI video generation models"
-    },
-    "browseAll": "Browse All Templates",
-    "categories": {
-      "tiktok": {
-        "title": "TikTok UGC",
-        "description": "Creator-style vertical ads with hooks, social proof, and quick edits."
-      },
-      "reels": {
-        "title": "Instagram Reels",
-        "description": "Mobile-first product promos with captions and rhythm matched to feed behavior."
-      },
-      "amazon": {
-        "title": "Amazon Listing",
-        "description": "Feature-led listing videos to improve product page clarity and conversion intent."
+    "badge": "Demo gallery",
+    "title": "See sample outputs before you launch",
+    "description": "Reference styles that sellers use for feeds, listings, and product demos.",
+    "ctaText": "Explore more examples and adapt them to your product.",
+    "ctaButton": "View all examples",
+    "items": {
+      "ugc": {
+        "tag": "UGC style",
+        "title": "Creator-style social ad",
+        "description": "Vertical hook-first creative for paid and organic social channels."
       },
       "demo": {
-        "title": "Product Demo",
-        "description": "Show setup, usage, and outcomes in concise demo-driven ad narratives."
+        "tag": "Product demo",
+        "title": "Feature-led walkthrough",
+        "description": "Show setup, use case, and outcomes in a clean narrative."
       },
-      "beforeAfter": {
-        "title": "Before/After",
-        "description": "Visual comparison videos that highlight transformation and proof quickly."
+      "listing": {
+        "tag": "Listing clip",
+        "title": "Marketplace-ready product clip",
+        "description": "Short format tailored for PDP and listing environments."
+      }
+    }
+  },
+  "Features": {
+    "badge": "Why Seedance",
+    "title": "A focused workflow, not a bloated editor",
+    "description": "Three capabilities cover most ecommerce ad production from idea to export.",
+    "browseAll": "Browse templates",
+    "items": {
+      "quality": {
+        "title": "Consistent motion quality",
+        "description": "Seedance is tuned for product-forward scenes and stable movement."
+      },
+      "workflow": {
+        "title": "Prompt + image workflow",
+        "description": "Start from text, product photos, or references in one generator."
+      },
+      "delivery": {
+        "title": "Channel-ready exports",
+        "description": "Ship outputs for ads, feeds, and product listings without extra tools."
       }
     }
   },
   "HowItWorks": {
-    "badge": "3-Step Workflow",
-    "title": "Go from Product to Ad",
-    "subtitle": "in 3 simple steps",
-    "description": "Create and launch ecommerce video ads without a production team.",
-    "bottomHint": "No credit card required • {credits} free credits to start",
-    "cta": "Try the Workflow",
+    "badge": "How it works",
+    "title": "From product photo to ad in three steps",
+    "description": "Keep your team in one flow: brief, generate, publish.",
+    "cta": "Generate now",
     "steps": {
       "prompt": {
-        "title": "Add Product Context",
-        "description": "Paste your product details, value proposition, and audience angle.",
-        "stat": "Setup time"
+        "title": "Write the brief",
+        "description": "Describe your offer, target customer, and visual direction."
       },
       "upload": {
-        "title": "Upload Product Media",
-        "description": "Attach product photos or references and choose your ad format template.",
-        "stat": "Template variants"
+        "title": "Add product assets",
+        "description": "Upload your product photos or references and choose a format."
       },
       "generate": {
-        "title": "Generate & Publish",
-        "description": "Seedance 2.0 renders ad-ready outputs for your listing and social channels.",
-        "stat": "Render time"
-      },
-      "download": {
-        "title": "Download & Share",
-        "description": "Get your HD video and share it anywhere you want",
-        "stat": "Max quality"
+        "title": "Generate and review",
+        "description": "Create variations, compare results, and publish the best cut."
       }
     }
   },
   "CTA": {
-    "badge": "Scale Creative Output",
-    "title": "Ready to Launch More Product Ads?",
-    "subtitle": "Generate ecommerce videos in minutes with Seedance 2.0",
-    "description": "Move from one-off edits to repeatable ad production for your product catalog.",
+    "badge": "Ready to launch",
+    "title": "Build your next product ad with Seedance",
+    "description": "Open the generator, pick a model, and publish your first creative today.",
     "getStarted": "Start Generating",
-    "learnMore": "Learn More",
+    "viewPricing": "View pricing",
     "benefits": {
-      "free": "3 videos/month on Free plan",
-      "noCard": "No credit card required to start",
-      "cancel": "Upgrade or downgrade anytime",
-      "support": "Email support for all plans"
+      "free": "$1 one-time trial pack (1 video, once per account)",
+      "noCard": "Start generating instantly",
+      "cancel": "Starter, Pro, or Business anytime",
+      "support": "Email support available"
     },
-    "generating": "Generating...",
-    "readyIn": "Typical render time",
-    "minutes": "minutes",
-    "from": "from",
-    "reviews": "reviews",
-    "testimonials": {
-      "title": "Loved by Creators",
-      "subtitle": "See what our users are saying"
+    "panel": {
+      "title": "What you can do next",
+      "headline": "Create, review, and iterate in one place.",
+      "description": "Use the homepage generator for first drafts, then manage outputs and retries in your workspace.",
+      "note": "Tip: Save prompt variations and compare results in My Creations."
     }
   },
   "FAQ": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything about AI product video generation and ecommerce ad workflows",
-    "contact": "Need help with your setup? Reach us at",
+    "title": "Frequently asked questions",
+    "subtitle": "Key details about generation, usage rights, and credits.",
+    "contact": "Need help? Email",
     "general": {
-      "question": "What is this AI product video generator built for?",
-      "answer": "It is built for ecommerce teams that need fast ad creative for Shopify stores, Amazon listings, Etsy products, and paid social campaigns."
+      "question": "Who is Seedance for?",
+      "answer": "Seedance is for ecommerce sellers, brand teams, and agencies that need product-focused video ads quickly."
     },
     "commercial": {
-      "question": "Can I use generated videos in paid ads and listings?",
-      "answer": "Yes. You can use generated videos in commercial channels such as TikTok Ads, Meta Ads, Amazon listings, and your storefront pages according to your plan terms."
+      "question": "Can I use generated videos for commercial campaigns?",
+      "answer": "Yes. Generated outputs can be used in commercial channels based on your active plan terms."
     },
     "aiModels": {
-      "question": "How does Seedance 2.0 help ad performance?",
-      "answer": "Seedance 2.0 is optimized for coherent motion and product-focused scenes, helping you produce clearer demo clips, hooks, and transformation shots for ad testing."
+      "question": "Which models are available?",
+      "answer": "Model availability depends on your current provider configuration and may update over time."
     },
     "credits": {
-      "question": "How does credit-based pricing work?",
-      "answer": "Each plan includes a fixed number of videos per month. When you need more, you can buy extra credits at a transparent per-video rate."
+      "question": "How do credits work?",
+      "answer": "Each generation consumes credits based on model and settings. Your monthly plan includes a credit allowance."
     },
     "refund": {
-      "question": "Do unused monthly videos roll over?",
-      "answer": "Monthly allocations are designed for active testing cycles and do not roll over by default. Contact support if you need a higher-volume plan structure."
+      "question": "Do monthly credits roll over automatically?",
+      "answer": "Monthly credits are allocated per billing cycle. Check plan terms for rollover or upgrade options."
     },
     "support": {
-      "question": "Can agencies or multi-brand sellers use this?",
-      "answer": "Yes. Agencies and multi-store operators can use the Business plan and API workflows to generate ad variants across catalogs and campaigns."
+      "question": "Where can I get support?",
+      "answer": "Contact support@videofly.app for billing, generation, or workflow questions."
     }
   },
   "Footer": {
     "product": "Product",
-    "company": "Company",
     "legal": "Legal",
-    "copyright": "© {year} VideoFly. All rights reserved.",
+    "copyright": "© {year} Seedance. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "cookie": "Cookie Policy"
+    "description": "Seedance helps ecommerce teams generate product videos with fast, repeatable workflows.",
+    "madeBy": "Built by Seedance"
   },
   "Credits": {
     "title": "Credits",
@@ -385,7 +323,7 @@
   },
   "SignInModal": {
     "signin_title": "Sign in to your account",
-    "signin_subtitle": "Get started with VideoFly today",
+    "signin_subtitle": "Get started with Seedance today",
     "privacy": "By continuing, you agree to our Terms of Service and Privacy Policy.",
     "continue_google": "Continue with Google",
     "continue_email": "Continue with Email",
@@ -394,10 +332,10 @@
     "terms_notice": "By continuing, you agree to our Terms of Service and Privacy Policy."
   },
   "MainNav": {
-    "introducing": "Introducing VideoFly"
+    "introducing": "Introducing Seedance"
   },
   "SiteFooter": {
-    "copyright": "© {currentYear} VideoFly. All rights reserved."
+    "copyright": "© {currentYear} Seedance. All rights reserved."
   },
   "Mail": {
     "common": {
@@ -405,11 +343,11 @@
       "copyright": "© {year} All Rights Reserved."
     },
     "welcome": {
-      "subject": "Welcome to VideoFly!",
+      "subject": "Welcome to Seedance!",
       "greeting": "Hi {name},",
-      "title": "Welcome to VideoFly!",
-      "body": "Thank you for joining VideoFly! We're thrilled to have you on board.",
-      "features": "With VideoFly, you can:",
+      "title": "Welcome to Seedance!",
+      "body": "Thank you for joining Seedance! We're thrilled to have you on board.",
+      "features": "With Seedance, you can:",
       "featuresList": {
         "generate": "Generate stunning AI videos in minutes",
         "models": "Use multiple AI models like Sora 2, Veo 3.1, and more",
@@ -422,7 +360,7 @@
       "subject": "Reset Your Password",
       "greeting": "Hi {name},",
       "title": "Reset Your Password",
-      "body": "We received a request to reset your password for your VideoFly account.",
+      "body": "We received a request to reset your password for your Seedance account.",
       "instruction": "Click the button below to reset your password:",
       "button": "Reset Password",
       "validity": "This link will expire in 30 minutes and can only be used once.",
@@ -431,10 +369,10 @@
       "footer": "If you didn't request this, please ignore this email."
     },
     "magicLink": {
-      "subject": "Sign In to VideoFly",
+      "subject": "Sign In to Seedance",
       "greeting": "Hi {name},",
-      "title": "Sign In to VideoFly",
-      "body": "We received a request to sign in to your VideoFly account.",
+      "title": "Sign In to Seedance",
+      "body": "We received a request to sign in to your Seedance account.",
       "instruction": "Click the button below to sign in:",
       "button": "Sign In",
       "validity": "This link will expire in 24 hours.",
@@ -444,11 +382,11 @@
   },
   "Emails": {
     "welcome": {
-      "subject": "Welcome to VideoFly!",
+      "subject": "Welcome to Seedance!",
       "greeting": "Hi {name},",
-      "title": "Welcome to VideoFly!",
-      "body": "Thank you for joining VideoFly! We're thrilled to have you on board.",
-      "features": "With VideoFly, you can:",
+      "title": "Welcome to Seedance!",
+      "body": "Thank you for joining Seedance! We're thrilled to have you on board.",
+      "features": "With Seedance, you can:",
       "featuresList": {
         "generate": "Generate stunning AI videos in minutes",
         "models": "Use multiple AI models like Sora 2, Veo 3.1, and more",
@@ -456,20 +394,20 @@
       },
       "cta": "Start Creating Videos",
       "footer": "If you have any questions, feel free to reach out to our support team.",
-      "copyright": "© {year} VideoFly. All rights reserved."
+      "copyright": "© {year} Seedance. All rights reserved."
     },
     "resetPassword": {
       "subject": "Reset Your Password",
       "greeting": "Hi {name},",
       "title": "Reset Your Password",
-      "body": "We received a request to reset your password for your VideoFly account.",
+      "body": "We received a request to reset your password for your Seedance account.",
       "instruction": "Click the button below to reset your password:",
       "button": "Reset Password",
       "validity": "This link will expire in 30 minutes and can only be used once.",
       "ignore": "If you did not request a password reset, you can safely ignore this email.",
       "security": "For security reasons, this link expires after 30 minutes.",
       "footer": "If you didn't request this, please ignore this email.",
-      "copyright": "© {year} VideoFly. All rights reserved."
+      "copyright": "© {year} Seedance. All rights reserved."
     }
   },
   "dashboard": {
@@ -566,5 +504,64 @@
     "copyLink": "Copy link",
     "removeFromHistory": "Remove from history",
     "generationFailed": "Generation Failed"
+  },
+  "Testimonials": {
+    "badge": "Customer voices",
+    "title": "What teams say after shipping with Seedance",
+    "description": "Examples from active ecommerce workflows.",
+    "items": {
+      "seller": {
+        "name": "Maya L.",
+        "role": "DTC Store Operator",
+        "quote": "We can test new ad angles much faster because the first draft is ready in minutes."
+      },
+      "brand": {
+        "name": "Connor T.",
+        "role": "Marketplace Brand Manager",
+        "quote": "The workflow is simple enough for our catalog team and still gives us usable ad cuts."
+      },
+      "team": {
+        "name": "Nina P.",
+        "role": "Creative Strategist",
+        "quote": "Seedance helps us turn one product brief into multiple variations for testing."
+      }
+    }
+  },
+  "PricingLanding": {
+    "badge": "Pricing",
+    "title": "Start with a $1 trial, then scale",
+    "description": "No free tier. Choose the plan that matches your monthly volume.",
+    "oneTime": "one-time",
+    "perMonth": "/month",
+    "startGenerating": "Start Generating",
+    "note": "Trial includes 1 video and is limited to one purchase per account.",
+    "features": {
+      "trialLimit": "1 video included in trial pack",
+      "modelAccess": "Access to Seedance video generation models",
+      "commercial": "Commercial usage included",
+      "flexible": "Upgrade, downgrade, or pause as needed"
+    },
+    "plans": {
+      "trial": {
+        "name": "Trial",
+        "meta": "1 video once per account",
+        "description": "One-time trial pack to test Seedance quality and speed."
+      },
+      "starter": {
+        "name": "Starter",
+        "meta": "Monthly starter plan",
+        "description": "For solo creators and small shops shipping regular creatives."
+      },
+      "pro": {
+        "name": "Pro",
+        "meta": "Monthly growth plan",
+        "description": "For teams that test ad angles and refresh creatives weekly."
+      },
+      "business": {
+        "name": "Business",
+        "meta": "Monthly scale plan",
+        "description": "For brands and agencies running high-volume multi-product output."
+      }
+    }
   }
 }

@@ -66,7 +66,7 @@ export const ResetPasswordEmail = ({
                 color: "#18181b",
               }}
             >
-              VideoFly
+              Seedance
             </Text>
           </Section>
 
