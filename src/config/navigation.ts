@@ -42,6 +42,12 @@ export const sidebarNavigation: NavGroup[] = [
         href: "/reference-to-video",
         icon: "Video",
       },
+      {
+        id: "camera3d",
+        title: "3D Camera",
+        href: "/tools/3d-camera",
+        icon: "Camera",
+      },
     ],
   },
   // 未来 IMAGE 分组扩展示例
@@ -116,6 +122,12 @@ export const headerTools = [
     title: "Reference to Video",
     href: "/reference-to-video",
     icon: "Video",
+  },
+  {
+    id: "camera3d",
+    title: "3D Camera",
+    href: "/tools/3d-camera",
+    icon: "Camera",
   },
 ];
 
