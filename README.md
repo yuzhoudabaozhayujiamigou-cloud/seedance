@@ -196,6 +196,18 @@ git checkout upstream/main -- src/components/landing
 3. **环境变量** - 模板更新可能新增环境变量，检查 `.env.example`
 4. **数据库迁移** - 如有 schema 变更，执行 `pnpm db:migrate`
 
+## 🧭 3D Camera MVP（2026-03-31）
+
+- 工具页路由：`/[locale]/tools/3d-camera`
+- API 路由：`POST /api/v1/tools/3d-camera/generate`
+- 当前默认 provider：`stub`（返回原图复制 + yaw/pitch 元数据）
+
+后续接入真实图片编辑 provider：
+
+1. 在 `src/services/three-d-camera/providers/` 新增真实 provider 实现（遵循 `ThreeDCameraProvider` 接口）。
+2. 在 `src/services/three-d-camera/provider.ts` 注册 provider，并通过 `THREE_D_CAMERA_PROVIDER` 切换。
+3. 保持 API 入参与返回结构不变，前端无需改动即可切换后端实现。
+
 ## 🧩 近期更新（2026-01-26）
 
 - **模型与参数映射统一**：所有 provider 参数转换集中在 `src/ai/model-mapping.ts`，Veo 3.1 高/低质量自动选择对应模型 ID  

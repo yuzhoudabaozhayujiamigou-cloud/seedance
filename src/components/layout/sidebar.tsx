@@ -7,7 +7,7 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ImagePlay, Type, Video, FolderOpen, Gem, User, Sparkles } from "lucide-react";
+import { ImagePlay, Type, Video, FolderOpen, Gem, User, Sparkles, Camera } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/components/ui";
 import { sidebarNavigation } from "@/config/navigation";
@@ -25,6 +25,7 @@ const iconMap = {
   ImagePlay,
   Type,
   Video,
+  Camera,
   FolderOpen,
   Gem,
   User,
