@@ -8,7 +8,7 @@ export const imageToVideoConfig: ToolPageConfig = {
   // SEO 配置
   seo: {
     title: "Image to Video - Transform Photos into AI Videos",
-    description: "Convert your images into stunning videos using AI. Upload any photo and watch it come to life with smooth, realistic motion powered by Seedance AI models.",
+    description: "Generate motion clips from a source image using Seedance AI models. Generation speed and output options depend on model and queue load.",
     keywords: [
       "image to video",
       "photo animation",
@@ -61,8 +61,8 @@ export const imageToVideoConfig: ToolPageConfig = {
   // Landing Page 配置
   landing: {
     hero: {
-      title: "Transform Your Images into Stunning Videos",
-      description: "Upload any photo and watch AI bring it to life with smooth, realistic motion. Perfect for social media, marketing, and creative projects.",
+      title: "Turn Images into Motion Clip Drafts",
+      description: "Upload a source image and generate short motion variations quickly. Output settings and turnaround depend on model capabilities and queue status.",
       ctaText: "Get Started Free",
       ctaSubtext: `${NEW_USER_GIFT.credits} free credits to try`,
     },
@@ -87,10 +87,10 @@ export const imageToVideoConfig: ToolPageConfig = {
 
     features: [
       "Upload any photo (JPG, PNG, WEBP up to 10MB)",
-      "Multiple AI models for different animation styles",
-      "Full HD output up to 1080p resolution",
-      "Fast generation in 2-5 minutes",
-      "Commercial use rights included",
+      "Choose supported Seedance models and durations",
+      "Aspect ratio and quality options depend on model capabilities",
+      "Generation time depends on queue and selected model",
+      "Commercial use follows your active plan terms",
     ],
 
     supportedModels: [
@@ -99,11 +99,6 @@ export const imageToVideoConfig: ToolPageConfig = {
       { name: "Seedance 1.0 Quality", provider: "ByteDance", color: "#059669" },
     ],
 
-    stats: {
-      videosGenerated: "500K+",
-      usersCount: "50K+",
-      avgRating: 4.8,
-    },
   },
 
   // 多语言 key 前缀

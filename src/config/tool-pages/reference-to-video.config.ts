@@ -7,15 +7,15 @@ import { NEW_USER_GIFT } from "@/config/pricing-user";
 export const referenceToVideoConfig: ToolPageConfig = {
   // SEO 配置
   seo: {
-    title: "Reference to Video - Transform Videos with AI",
-    description: "Upload a reference video and transform it into something new with AI. Change style, add effects, or create variations while maintaining the essence of your original video.",
+    title: "Reference to Video - Generate Variations from References",
+    description: "Upload reference frames/images and generate guided video variations with AI. Direct reference-video ingestion is in development.",
     keywords: [
       "reference to video",
       "video to video",
       "ai video transformation",
-      "video restyle",
+      "reference frames to video",
       "video variation",
-      "video editing ai",
+      "reference guided video generation",
     ],
     ogImage: "/og-reference-to-video.jpg",
   },
@@ -43,7 +43,7 @@ export const referenceToVideoConfig: ToolPageConfig = {
       showModeSelector: false,
     },
 
-    promptPlaceholder: "Describe how you want to transform the video... e.g., 'Change to anime style, add snow effect'",
+    promptPlaceholder: "Describe how you want to vary the output while keeping key subjects consistent...",
 
     settings: {
       showDuration: false, // 使用原始视频时长
@@ -59,8 +59,8 @@ export const referenceToVideoConfig: ToolPageConfig = {
   // Landing Page 配置
   landing: {
     hero: {
-      title: "Transform Your Videos with AI Magic",
-      description: "Upload a reference video and let AI create stunning variations, style transfers, or seamless edits while preserving the core content.",
+      title: "Generate Guided Variations from References",
+      description: "Use reference frames/images plus prompts to guide style and motion. Direct reference-video upload support is still in development.",
       ctaText: "Try It Now",
       ctaSubtext: `${NEW_USER_GIFT.credits} free credits to start`,
     },
@@ -84,22 +84,17 @@ export const referenceToVideoConfig: ToolPageConfig = {
     ],
 
     features: [
-      "Upload reference videos (MP4, MOV, AVI up to 100MB)",
-      "AI-powered style transfer and transformation",
-      "Maintain original video timing and flow",
-      "Create multiple variations from one reference",
-      "Support for various artistic styles and effects",
+      "Upload reference images/frames (JPG, PNG, WEBP up to 10MB each)",
+      "Prompt-guided variation generation (experimental)",
+      "Keep key visual elements consistent across outputs",
+      "Aspect ratio options depend on active model",
+      "Reference-video upload pipeline is in development",
     ],
 
     supportedModels: [
       { name: "Seedance 1.5 Pro", provider: "ByteDance", color: "#10b981" },
     ],
 
-    stats: {
-      videosGenerated: "100K+",
-      usersCount: "15K+",
-      avgRating: 4.7,
-    },
   },
 
   // 多语言 key 前缀

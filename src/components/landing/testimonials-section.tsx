@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const testimonialKeys = ["seller", "brand", "team"] as const;
+const testimonialKeys = ["streamer", "editor", "team"] as const;
 
 export function TestimonialsSection() {
   const t = useTranslations("Testimonials");

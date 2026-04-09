@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "AI Product Video Generator | Seedance 2.0 for Ecommerce Ads",
-    "description": "Create ecommerce video ads for Shopify, Amazon, and Etsy in minutes with Seedance 2.0."
+    "title": "AI Game Video Editor | Seedance for Gaming Clips",
+    "description": "Turn raw gameplay into clip drafts with AI generation. Highlight detection and advanced editing automation are currently in development."
   },
   "Common": {
     "login": "Login",
@@ -25,18 +25,18 @@
     "myCreations": "My Creations",
     "credits": "Credits",
     "settings": "Settings",
-    "generate": "Generate",
-    "templates": "Templates",
-    "examples": "Examples",
+    "generate": "Editor",
+    "templates": "Game Templates",
+    "examples": "Clip Examples",
     "api": "API"
   },
   "Hero": {
-    "badge": "Seedance 1.5 for ecommerce video ads",
-    "title": "Generate product ads in minutes.",
-    "description": "Upload your product image, choose a format, and render launch-ready video creative without a production team.",
-    "startCreating": "Start Generating",
-    "viewExamples": "See templates",
-    "creditsHint": "$1 one-time trial pack includes 1 video (once per account).",
+    "badge": "Seedance 1.5 for gaming creators",
+    "title": "Edit gaming clips with AI, fast.",
+    "description": "Import gameplay footage or prompts to generate clip drafts fast. Highlight recognition and auto-polish tools are rolling out in early access.",
+    "startCreating": "Start Editing",
+    "viewExamples": "See game templates",
+    "creditsHint": "$1 one-time trial pack includes 1 rendered clip (once per account).",
     "noModels": "No enabled models are available for the current AI provider configuration."
   },
   "Notifications": {
@@ -76,107 +76,107 @@
     "download": "Download"
   },
   "Showcase": {
-    "badge": "Demo gallery",
-    "title": "See sample outputs before you launch",
-    "description": "Reference styles that sellers use for feeds, listings, and product demos.",
-    "ctaText": "Explore more examples and adapt them to your product.",
+    "badge": "Clip gallery",
+    "title": "Preview gaming highlight styles before you edit",
+    "description": "Reference cuts for streamers, UP creators, and clip channels.",
+    "ctaText": "Open more game-ready examples and adapt them to your footage.",
     "ctaButton": "View all examples",
     "items": {
-      "ugc": {
-        "tag": "UGC style",
-        "title": "Creator-style social ad",
-        "description": "Vertical hook-first creative for paid and organic social channels."
+      "stardew": {
+        "tag": "Stardew Valley",
+        "title": "Cozy day recap highlight",
+        "description": "Turn long farm sessions into calm short-form recap drafts."
       },
-      "demo": {
-        "tag": "Product demo",
-        "title": "Feature-led walkthrough",
-        "description": "Show setup, use case, and outcomes in a clean narrative."
+      "league": {
+        "tag": "League of Legends",
+        "title": "Teamfight clutch breakdown",
+        "description": "Focus prompts on decisive fights and generate breakdown variants faster."
       },
-      "listing": {
-        "tag": "Listing clip",
-        "title": "Marketplace-ready product clip",
-        "description": "Short format tailored for PDP and listing environments."
+      "cs2": {
+        "tag": "CS2",
+        "title": "Round-winning frag montage",
+        "description": "Build quick multi-kill cuts with prompt-driven pacing and timing."
       }
     }
   },
   "Features": {
-    "badge": "Why Seedance",
-    "title": "A focused workflow, not a bloated editor",
-    "description": "Three capabilities cover most ecommerce ad production from idea to export.",
-    "browseAll": "Browse templates",
+    "badge": "Why gaming creators choose Seedance",
+    "title": "AI clip workflow built for gameplay footage",
+    "description": "Generate first cuts now, with highlight guidance and editing assists rolling out step by step.",
+    "browseAll": "Browse game templates",
     "items": {
       "quality": {
-        "title": "Consistent motion quality",
-        "description": "Seedance is tuned for product-forward scenes and stable movement."
+        "title": "Highlight recognition (Coming soon)",
+        "description": "Automatic highlight detection is in development. Today, you can guide key moments with prompts and references."
       },
       "workflow": {
-        "title": "Prompt + image workflow",
-        "description": "Start from text, product photos, or references in one generator."
+        "title": "AI edit assists (Early access)",
+        "description": "Generation controls are currently available; subtitle, music, and effect automation is rolling out gradually."
       },
       "delivery": {
-        "title": "Channel-ready exports",
-        "description": "Ship outputs for ads, feeds, and product listings without extra tools."
+        "title": "Platform-ready outputs (Currently available)",
+        "description": "Generate 16:9 and 9:16 clips for YouTube, TikTok, and Bilibili workflows, then publish with your own channel tools."
       }
     }
   },
   "HowItWorks": {
     "badge": "How it works",
-    "title": "From product photo to ad in three steps",
-    "description": "Keep your team in one flow: brief, generate, publish.",
-    "cta": "Generate now",
+    "title": "From raw gameplay to highlight clip in three steps",
+    "description": "Plan, generate, and iterate in one workflow.",
+    "cta": "Open editor",
     "steps": {
       "prompt": {
-        "title": "Write the brief",
-        "description": "Describe your offer, target customer, and visual direction."
+        "title": "Describe your clip goal",
+        "description": "Tell Seedance the game, mood, and moment type you want."
       },
       "upload": {
-        "title": "Add product assets",
-        "description": "Upload your product photos or references and choose a format."
+        "title": "Upload gameplay footage",
+        "description": "Add your recording or references, then pick aspect ratio and duration."
       },
       "generate": {
-        "title": "Generate and review",
-        "description": "Create variations, compare results, and publish the best cut."
+        "title": "Review drafts and download",
+        "description": "Check outputs, regenerate variations, and download clips. Direct publishing integrations are planned."
       }
     }
   },
   "CTA": {
-    "badge": "Ready to launch",
-    "title": "Build your next product ad with Seedance",
-    "description": "Open the generator, pick a model, and publish your first creative today.",
-    "getStarted": "Start Generating",
+    "badge": "Ready to create",
+    "title": "Build your next gaming highlight with Seedance",
+    "description": "Start with one clip, iterate fast, and prepare versions for your creator channels.",
+    "getStarted": "Start Editing",
     "viewPricing": "View pricing",
     "benefits": {
-      "free": "$1 one-time trial pack (1 video, once per account)",
-      "noCard": "Start generating instantly",
+      "free": "$1 one-time trial pack (1 rendered clip, once per account)",
+      "noCard": "Start generating in minutes",
       "cancel": "Starter, Pro, or Business anytime",
-      "support": "Email support available"
+      "support": "Email support for creators and teams"
     },
     "panel": {
       "title": "What you can do next",
-      "headline": "Create, review, and iterate in one place.",
-      "description": "Use the homepage generator for first drafts, then manage outputs and retries in your workspace.",
-      "note": "Tip: Save prompt variations and compare results in My Creations."
+      "headline": "Generate, iterate, and manage in one workspace.",
+      "description": "Use the homepage generator for first cuts, then manage retries and downloads in My Creations.",
+      "note": "Tip: Save both 16:9 and 9:16 versions for different channels."
     }
   },
   "FAQ": {
     "title": "Frequently asked questions",
-    "subtitle": "Key details about generation, usage rights, and credits.",
+    "subtitle": "Key details about gaming clip workflows, usage rights, and credits.",
     "contact": "Need help? Email",
     "general": {
       "question": "Who is Seedance for?",
-      "answer": "Seedance is for ecommerce sellers, brand teams, and agencies that need product-focused video ads quickly."
+      "answer": "Seedance is for gaming creators, streamers, clip editors, and teams that need fast highlight production."
     },
     "commercial": {
-      "question": "Can I use generated videos for commercial campaigns?",
-      "answer": "Yes. Generated outputs can be used in commercial channels based on your active plan terms."
+      "question": "Can I publish generated clips on YouTube, TikTok, and Bilibili?",
+      "answer": "Yes. Generated outputs can be used across creator and commercial channels based on your active plan terms."
     },
     "aiModels": {
-      "question": "Which models are available?",
-      "answer": "Model availability depends on your current provider configuration and may update over time."
+      "question": "Which models and workflow features are currently available?",
+      "answer": "Current availability depends on your provider configuration. Generation is available now; highlight recognition, auto-edit enhancements, and direct publishing are in development."
     },
     "credits": {
       "question": "How do credits work?",
-      "answer": "Each generation consumes credits based on model and settings. Your monthly plan includes a credit allowance."
+      "answer": "Each generation and render consumes credits based on model and settings. Your monthly plan includes a credit allowance."
     },
     "refund": {
       "question": "Do monthly credits roll over automatically?",
@@ -184,7 +184,7 @@
     },
     "support": {
       "question": "Where can I get support?",
-      "answer": "Contact support@videofly.app for billing, generation, or workflow questions."
+      "answer": "Contact support@videofly.app for billing, generation, or gaming workflow questions."
     }
   },
   "Footer": {
@@ -193,7 +193,7 @@
     "copyright": "© {year} Seedance. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "description": "Seedance helps ecommerce teams generate product videos with fast, repeatable workflows.",
+    "description": "Seedance helps gaming creators turn raw footage and prompts into publish-ready clip drafts faster.",
     "madeBy": "Built by Seedance"
   },
   "Credits": {
@@ -257,7 +257,7 @@
   },
   "PricingCards": {
     "pricing": "Pricing",
-    "slogan": "Credit-based plans for ecommerce sellers",
+    "slogan": "Credit-based plans for gaming creators",
     "onetime": "One-time",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -506,38 +506,38 @@
     "generationFailed": "Generation Failed"
   },
   "Testimonials": {
-    "badge": "Customer voices",
-    "title": "What teams say after shipping with Seedance",
-    "description": "Examples from active ecommerce workflows.",
+    "badge": "Creator voices",
+    "title": "What gaming creators say after creating with Seedance",
+    "description": "Feedback from stream clips, ranked highlights, and daily uploads.",
     "items": {
-      "seller": {
+      "streamer": {
         "name": "Maya L.",
-        "role": "DTC Store Operator",
-        "quote": "We can test new ad angles much faster because the first draft is ready in minutes."
+        "role": "Variety Streamer",
+        "quote": "I can turn a three-hour stream idea into usable clip drafts in one short session."
       },
-      "brand": {
+      "editor": {
         "name": "Connor T.",
-        "role": "Marketplace Brand Manager",
-        "quote": "The workflow is simple enough for our catalog team and still gives us usable ad cuts."
+        "role": "League Clip Channel Lead",
+        "quote": "Prompt variants reduce timeline trial-and-error before we do final manual polish."
       },
       "team": {
         "name": "Nina P.",
-        "role": "Creative Strategist",
-        "quote": "Seedance helps us turn one product brief into multiple variations for testing."
+        "role": "Esports Content Strategist",
+        "quote": "One match VOD now gives us both 16:9 and 9:16 versions for different channels."
       }
     }
   },
   "PricingLanding": {
     "badge": "Pricing",
-    "title": "Start with a $1 trial, then scale",
-    "description": "No free tier. Choose the plan that matches your monthly volume.",
+    "title": "Start with a $1 clip test, then scale your output",
+    "description": "No free tier. Choose the plan that matches your monthly clip volume.",
     "oneTime": "one-time",
     "perMonth": "/month",
     "startGenerating": "Start Generating",
     "note": "Trial includes 1 video and is limited to one purchase per account.",
     "features": {
       "trialLimit": "1 video included in trial pack",
-      "modelAccess": "Access to Seedance video generation models",
+      "modelAccess": "Access to Seedance generation models and workflow tools",
       "commercial": "Commercial usage included",
       "flexible": "Upgrade, downgrade, or pause as needed"
     },
@@ -545,22 +545,22 @@
       "trial": {
         "name": "Trial",
         "meta": "1 video once per account",
-        "description": "One-time trial pack to test Seedance quality and speed."
+        "description": "One-time trial pack to test Seedance clip quality, speed, and style fit."
       },
       "starter": {
         "name": "Starter",
         "meta": "Monthly starter plan",
-        "description": "For solo creators and small shops shipping regular creatives."
+        "description": "For solo creators publishing gaming clips on a regular cadence."
       },
       "pro": {
         "name": "Pro",
         "meta": "Monthly growth plan",
-        "description": "For teams that test ad angles and refresh creatives weekly."
+        "description": "For channels preparing weekly clip versions across multiple platforms."
       },
       "business": {
         "name": "Business",
         "meta": "Monthly scale plan",
-        "description": "For brands and agencies running high-volume multi-product output."
+        "description": "For teams running high-volume clip pipelines for creators or esports projects."
       }
     }
   }

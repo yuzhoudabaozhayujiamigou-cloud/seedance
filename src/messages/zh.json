@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Seedance - AI 视频生成平台",
-    "description": "使用 Sora 2、Veo 3.1 等模型在几分钟内创建惊人的 AI 视频"
+    "title": "AI 游戏视频编辑器 | Seedance 游戏高光剪辑",
+    "description": "把原始游戏素材快速生成成短片草稿。高光识别与自动增强等能力正在持续开发中。"
   },
   "Common": {
     "login": "登录",
@@ -25,18 +25,18 @@
     "myCreations": "我的作品",
     "credits": "积分",
     "settings": "设置",
-    "generate": "生成",
-    "templates": "模板",
-    "examples": "示例",
+    "generate": "编辑器",
+    "templates": "游戏模板",
+    "examples": "剪辑示例",
     "api": "API"
   },
   "Hero": {
-    "badge": "面向电商广告的 Seedance 1.5",
-    "title": "几分钟生成产品广告视频。",
-    "description": "上传商品图，选择模板格式，即可生成可发布的视频创意。",
-    "startCreating": "立即生成",
-    "viewExamples": "查看模板",
-    "creditsHint": "$1 一次性试用包，含 1 条视频（每个账号仅限一次）。",
+    "badge": "面向游戏创作者的 Seedance 1.5",
+    "title": "用 AI 快速剪出游戏高光。",
+    "description": "导入素材或输入提示词，快速生成游戏短片草稿。高光识别与 AI 自动增强能力正处于早期开放阶段。",
+    "startCreating": "开始剪辑",
+    "viewExamples": "查看游戏模板",
+    "creditsHint": "$1 一次性试用包，含 1 条渲染视频（每个账号仅限一次）。",
     "noModels": "当前 AI Provider 配置下没有可用模型。"
   },
   "Notifications": {
@@ -77,106 +77,106 @@
   },
   "Showcase": {
     "badge": "示例预览",
-    "title": "先看成片，再开始投放",
-    "description": "浏览适用于信息流、商品详情页和演示场景的参考样式。",
-    "ctaText": "查看更多案例，并套用到你的商品上。",
+    "title": "先看游戏高光风格，再开始剪辑",
+    "description": "浏览面向 UP 主、主播与 clip creator 的成片参考。",
+    "ctaText": "查看更多游戏剪辑示例，并套用到你的素材。",
     "ctaButton": "查看全部示例",
     "items": {
-      "ugc": {
-        "tag": "UGC 风格",
-        "title": "创作者口吻的社媒广告",
-        "description": "适配投流与自然流量的竖版开场型创意。"
+      "stardew": {
+        "tag": "Stardew Valley",
+        "title": "治愈向日常高光回顾",
+        "description": "把长时农场实况压缩成节奏舒适的短视频草稿。"
       },
-      "demo": {
-        "tag": "产品演示",
-        "title": "功能导向的演示视频",
-        "description": "清晰展示使用步骤、场景和效果。"
+      "league": {
+        "tag": "League of Legends",
+        "title": "团战翻盘高光解说剪辑",
+        "description": "围绕关键团战组织提示词，更快生成解说向回顾版本。"
       },
-      "listing": {
-        "tag": "详情页短片",
-        "title": "适配电商详情页的视频",
-        "description": "用于商品页与平台列表场景的简短展示。"
+      "cs2": {
+        "tag": "CS2",
+        "title": "回合制多杀集锦",
+        "description": "通过提示词控制节奏，快速产出紧凑的多杀集锦风格。"
       }
     }
   },
   "Features": {
-    "badge": "为什么选择 Seedance",
-    "title": "聚焦工作流，而不是复杂剪辑器",
-    "description": "三个核心能力，覆盖电商广告从想法到导出的主要环节。",
-    "browseAll": "浏览模板",
+    "badge": "为什么游戏创作者选择 Seedance",
+    "title": "围绕游戏素材的 AI 生成工作流",
+    "description": "先快速出首版，再通过迭代完善；高光识别与增强编辑能力持续上线中。",
+    "browseAll": "浏览游戏模板",
     "items": {
       "quality": {
-        "title": "稳定的运动质量",
-        "description": "模型针对商品主体展示进行了优化，画面表达更连贯。"
+        "title": "高光时刻识别（Coming soon）",
+        "description": "自动高光识别功能开发中。当前可通过提示词和参考素材引导关键时刻。"
       },
       "workflow": {
-        "title": "提示词 + 图片一体流程",
-        "description": "支持从文本、商品图或参考素材直接生成。"
+        "title": "AI 编辑辅助（Early access）",
+        "description": "当前已支持生成与参数控制；字幕、配乐和特效自动化能力正逐步开放。"
       },
       "delivery": {
-        "title": "多渠道可用输出",
-        "description": "结果可直接用于广告、社媒和商品详情页。"
+        "title": "平台适配输出（当前可用）",
+        "description": "当前可生成 16:9 与 9:16 成片，便于后续发布到 YouTube、TikTok、Bilibili。"
       }
     }
   },
   "HowItWorks": {
     "badge": "使用流程",
-    "title": "三步把商品图变成广告视频",
-    "description": "统一在一个流程里完成简报、生成与发布。",
-    "cta": "立即生成",
+    "title": "三步把原始录像变成高光短片",
+    "description": "在一个流程里完成构思、生成与迭代。",
+    "cta": "打开编辑器",
     "steps": {
       "prompt": {
-        "title": "填写创意简报",
-        "description": "说明卖点、目标人群和想要的画面风格。"
+        "title": "定义这条片子的目标",
+        "description": "说明游戏类型、情绪节奏和你想突出的高光时刻。"
       },
       "upload": {
-        "title": "上传商品素材",
-        "description": "上传商品图或参考图，并选择输出格式。"
+        "title": "上传游戏录像",
+        "description": "导入录屏或参考素材，并选择比例与时长。"
       },
       "generate": {
-        "title": "生成并筛选",
-        "description": "批量生成方案，对比后发布最合适的版本。"
+        "title": "预览草稿并下载",
+        "description": "查看生成结果、继续重试迭代并下载成片。直连发布能力仍在规划中。"
       }
     }
   },
   "CTA": {
-    "badge": "准备开始",
-    "title": "用 Seedance 生成你的下一条产品广告",
-    "description": "打开生成器，选择模型，今天就发布第一条创意。",
-    "getStarted": "立即生成",
+    "badge": "准备发布",
+    "title": "用 Seedance 做你的下一条游戏高光",
+    "description": "从一段素材开始，快速迭代并为不同平台准备版本。",
+    "getStarted": "开始剪辑",
     "viewPricing": "查看定价",
     "benefits": {
-      "free": "$1 一次性试用包（1 条视频，每个账号仅限一次）",
-      "noCard": "可直接开始生成",
+      "free": "$1 一次性试用包（1 条渲染视频，每个账号仅限一次）",
+      "noCard": "几分钟内开始生成",
       "cancel": "可随时选择 Starter、Pro 或 Business",
-      "support": "提供邮件支持"
+      "support": "面向创作者与团队的邮件支持"
     },
     "panel": {
       "title": "接下来可以做什么",
-      "headline": "在一个工作台里完成生成、筛选和迭代。",
-      "description": "先在首页快速出稿，再到工作区管理历史结果和重试任务。",
-      "note": "建议：保存不同提示词版本，在 My Creations 中对比效果。"
+      "headline": "生成、迭代、管理一站完成。",
+      "description": "先在首页生成首版，再到工作区管理重试与下载。",
+      "note": "建议：按 16:9 / 9:16 各保存一个版本用于不同渠道。"
     }
   },
   "FAQ": {
     "title": "常见问题",
-    "subtitle": "关于生成、商用权限与积分规则的核心说明。",
+    "subtitle": "关于游戏剪辑流程、商用权限与积分规则的核心说明。",
     "contact": "需要帮助？请联系",
     "general": {
-      "question": "Seedance 适合哪些团队？",
-      "answer": "适合需要快速产出商品广告视频的卖家、品牌团队和代理商。"
+      "question": "Seedance 适合哪些创作者？",
+      "answer": "适合游戏 UP 主、主播、clip creator 以及需要高频产出高光视频的内容团队。"
     },
     "commercial": {
-      "question": "生成内容可以用于商业投放吗？",
-      "answer": "可以。具体商用范围以你当前套餐条款为准。"
+      "question": "生成内容可以发布到 YouTube、TikTok、Bilibili 吗？",
+      "answer": "可以。你生成的内容可用于商业与频道分发，具体以当前套餐条款为准。"
     },
     "aiModels": {
-      "question": "平台支持哪些模型？",
-      "answer": "可用模型取决于当前 Provider 配置，后续会按配置持续更新。"
+      "question": "平台当前支持哪些模型和能力？",
+      "answer": "具体可用能力取决于当前 Provider 配置。当前已支持视频生成；高光识别、自动增强编辑和直连发布能力仍在开发中。"
     },
     "credits": {
       "question": "积分如何扣费？",
-      "answer": "每次生成会根据模型和参数消耗积分。月度套餐包含固定积分额度。"
+      "answer": "每次生成或渲染会根据模型和参数消耗积分。月度套餐包含固定积分额度。"
     },
     "refund": {
       "question": "月度积分会自动结转吗？",
@@ -184,7 +184,7 @@
     },
     "support": {
       "question": "如何联系支持团队？",
-      "answer": "可发送邮件至 support@videofly.app 获取账单和生成相关支持。"
+      "answer": "可发送邮件至 support@videofly.app 获取账单、生成和游戏剪辑相关支持。"
     }
   },
   "Footer": {
@@ -193,7 +193,7 @@
     "copyright": "© {year} Seedance. 保留所有权利。",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "description": "Seedance 帮助电商团队高效、稳定地生成产品视频创意。",
+    "description": "Seedance 帮助游戏创作者更快把原始素材和提示词生成成可发布的短片草稿。",
     "madeBy": "由 Seedance 团队打造"
   },
   "Credits": {
@@ -257,7 +257,7 @@
   },
   "PricingCards": {
     "pricing": "定价",
-    "slogan": "简单透明的价格",
+    "slogan": "面向游戏创作者的积分制方案",
     "onetime": "积分包",
     "monthly": "按月",
     "yearly": "按年",
@@ -507,37 +507,37 @@
   },
   "Testimonials": {
     "badge": "用户反馈",
-    "title": "团队在使用 Seedance 后的评价",
-    "description": "来自真实电商工作流的使用感受。",
+    "title": "游戏创作者在使用 Seedance 后的评价",
+    "description": "来自主播切片、排位高光与赛事内容团队的反馈。",
     "items": {
-      "seller": {
+      "streamer": {
         "name": "Maya L.",
-        "role": "独立站运营",
-        "quote": "新角度测试速度快了很多，几分钟就能拿到第一版素材。"
+        "role": "全职主播",
+        "quote": "三小时直播素材可以快速整理成可用短片草稿，前期剪辑时间明显下降。"
       },
-      "brand": {
+      "editor": {
         "name": "Connor T.",
-        "role": "平台品牌经理",
-        "quote": "流程清晰，商品团队也能快速上手，产出的广告片段可直接使用。"
+        "role": "英雄联盟集锦频道主编",
+        "quote": "多轮提示词生成减少了反复试错，团队能更快进入后期包装。"
       },
       "team": {
         "name": "Nina P.",
-        "role": "创意策略师",
-        "quote": "一份商品简报就能生成多个版本，便于我们快速做投放测试。"
+        "role": "电竞内容策略",
+        "quote": "同一场比赛可以先生成 16:9 和 9:16 版本，便于分发到不同渠道。"
       }
     }
   },
   "PricingLanding": {
     "badge": "定价",
-    "title": "先用 $1 试用，再按需扩展",
-    "description": "已移除免费档。按你的月度产出量选择方案。",
+    "title": "先用 $1 测一条短片，再按产出扩展",
+    "description": "无免费档，按你的月度剪辑量选择方案。",
     "oneTime": "一次性",
     "perMonth": "/月",
     "startGenerating": "立即生成",
     "note": "试用包包含 1 条视频，每个账号仅可购买一次。",
     "features": {
       "trialLimit": "试用包包含 1 条视频",
-      "modelAccess": "可使用 Seedance 视频生成模型",
+      "modelAccess": "可使用 Seedance 生成模型与工作流工具",
       "commercial": "包含商业使用权限",
       "flexible": "可按需升级、降级或暂停"
     },
@@ -545,22 +545,22 @@
       "trial": {
         "name": "Trial",
         "meta": "1 条视频，仅限每账号一次",
-        "description": "一次性试用包，用于快速验证 Seedance 的生成质量与速度。"
+        "description": "一次性试用包，用于快速验证 Seedance 的出片速度与风格匹配度。"
       },
       "starter": {
         "name": "Starter",
         "meta": "月度入门方案",
-        "description": "适合个人创作者和小型店铺进行稳定产出。"
+        "description": "适合个人创作者稳定更新游戏短片。"
       },
       "pro": {
         "name": "Pro",
         "meta": "月度增长方案",
-        "description": "适合需要持续测试广告角度并高频更新素材的团队。"
+        "description": "适合每周为多个平台准备短片版本的频道。"
       },
       "business": {
         "name": "Business",
         "meta": "月度规模方案",
-        "description": "适合品牌与代理商进行多商品高产能创意生产。"
+        "description": "适合服务多位创作者或电竞项目的内容团队。"
       }
     }
   }

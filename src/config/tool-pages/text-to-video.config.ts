@@ -8,7 +8,7 @@ export const textToVideoConfig: ToolPageConfig = {
   // SEO 配置
   seo: {
     title: "Text to Video - Create Videos from Text with AI",
-    description: "Transform your text descriptions into stunning videos using AI. Simply describe what you want, and watch Seedance AI models bring your vision to life.",
+    description: "Generate short videos from text prompts with Seedance AI models. Output and audio options depend on the selected model.",
     keywords: [
       "text to video",
       "ai video generator",
@@ -61,8 +61,8 @@ export const textToVideoConfig: ToolPageConfig = {
   // Landing Page 配置
   landing: {
     hero: {
-      title: "Create Stunning Videos from Text",
-      description: "Describe your vision in plain text and let AI bring it to life. From cinematic scenes to product showcases, the possibilities are endless.",
+      title: "Create Video Drafts from Text",
+      description: "Describe your scene in plain text and generate the first cut quickly. Output options depend on the selected model and provider setup.",
       ctaText: "Start Creating",
       ctaSubtext: `${NEW_USER_GIFT.credits} free credits to try`,
     },
@@ -86,11 +86,11 @@ export const textToVideoConfig: ToolPageConfig = {
     ],
 
     features: [
-      "Simply describe what you want to see",
-      "Access to Seedance AI models (1.5 Pro, 1.0 Fast, 1.0 Quality)",
-      "Cinematic quality up to 1080p",
-      "Generate audio and sound effects automatically",
-      "Multiple aspect ratios for any platform",
+      "Describe what you want to see in natural language",
+      "Seedance model options (availability depends on provider config)",
+      "Resolution and duration options vary by model",
+      "Audio generation is available on selected models (beta)",
+      "16:9 and 9:16 are broadly supported, with extra ratios on some models",
     ],
 
     supportedModels: [
@@ -99,11 +99,6 @@ export const textToVideoConfig: ToolPageConfig = {
       { name: "Seedance 1.0 Quality", provider: "ByteDance", color: "#059669" },
     ],
 
-    stats: {
-      videosGenerated: "1M+",
-      usersCount: "100K+",
-      avgRating: 4.9,
-    },
   },
 
   // 多语言 key 前缀
