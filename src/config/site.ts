@@ -25,7 +25,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: "Seedance",
   description:
-    "AI product video generator for ecommerce video ads powered by Seedance 2.0",
+    "AI game video editor for generating gameplay clip drafts with text, image, and reference inputs",
   url: process.env.NEXT_PUBLIC_APP_URL || "https://videofly.app",
   ogImage: "/og.png",
   links: {},

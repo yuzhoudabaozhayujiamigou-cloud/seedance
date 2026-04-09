@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: PageMetadataProps) {
   const { locale } = await params;
 
   const titles = {
-    en: "Seedance AI Product Video Generator for Ecommerce Ads",
-    zh: "Seedance AI 商品视频生成器",
+    en: "Seedance AI Game Video Editor for Gaming Clips",
+    zh: "Seedance AI 游戏视频编辑器",
   };
 
   const descriptions = {
-    en: "Generate ecommerce product videos for ads, feeds, and listings from prompts and product images.",
-    zh: "通过提示词和商品图片生成适用于广告、信息流和详情页的电商视频。",
+    en: "Generate gaming clip drafts from raw footage with AI. Highlight recognition and advanced edit automation are in active development.",
+    zh: "将原始游戏素材快速生成成短片草稿。高光识别与自动增强能力正在持续开发中。",
   };
 
   const canonicalUrl = `${siteConfig.url}${locale === i18n.defaultLocale ? "" : `/${locale}`}`;

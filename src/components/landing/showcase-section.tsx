@@ -8,17 +8,17 @@ import { LocaleLink } from "@/i18n/navigation";
 
 const showcaseVideos = [
   {
-    key: "ugc",
+    key: "stardew",
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    key: "demo",
+    key: "league",
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    key: "listing",
+    key: "cs2",
     image:
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
   },

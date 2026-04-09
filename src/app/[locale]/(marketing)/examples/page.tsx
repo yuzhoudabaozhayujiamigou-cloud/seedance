@@ -13,9 +13,9 @@ export async function generateMetadata({
   const alternates = buildAlternates("/examples", locale);
 
   return {
-    title: "Ecommerce Video Ad Examples | AI Product Video Generator",
+    title: "Gaming Clip Examples | AI Game Video Editor",
     description:
-      "See AI-generated ecommerce video ad examples for Shopify, Amazon, and Etsy product campaigns built with Seedance 2.0.",
+      "Explore reference styles and prompt directions for stream recaps, esports moments, and short-form creator clips.",
     alternates: {
       canonical: alternates.canonical,
       languages: alternates.languages,
@@ -27,9 +27,9 @@ export default function ExamplesPage() {
   return (
     <div className="flex flex-col">
       <section className="container mx-auto px-4 pt-16 pb-8 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Examples</h1>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Clip Examples</h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-          Explore high-converting ecommerce ad styles generated in minutes with Seedance 2.0.
+          Browse reference styles and prompt directions for your next gaming clip.
         </p>
       </section>
       <ShowcaseSection />

@@ -58,10 +58,10 @@ export function ThreeDCameraGenerator() {
   const [sourceImage, setSourceImage] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
 
-  const [viewCount, setViewCount] = useState(THREE_D_CAMERA_DEFAULTS.viewCount);
-  const [yawMin, setYawMin] = useState(THREE_D_CAMERA_DEFAULTS.yawMin);
-  const [yawMax, setYawMax] = useState(THREE_D_CAMERA_DEFAULTS.yawMax);
-  const [pitch, setPitch] = useState(THREE_D_CAMERA_DEFAULTS.pitch);
+  const [viewCount, setViewCount] = useState<number>(THREE_D_CAMERA_DEFAULTS.viewCount);
+  const [yawMin, setYawMin] = useState<number>(THREE_D_CAMERA_DEFAULTS.yawMin);
+  const [yawMax, setYawMax] = useState<number>(THREE_D_CAMERA_DEFAULTS.yawMax);
+  const [pitch, setPitch] = useState<number>(THREE_D_CAMERA_DEFAULTS.pitch);
 
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
